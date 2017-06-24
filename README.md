@@ -1,4 +1,4 @@
 # adomis
-Static web site for the Astronomical Society of Omis
+Static web site for the Astronomical Society of Omis.
 
-[Look it up](http://adomis.hr)
+[Look it up!](http://adomis.hr)
