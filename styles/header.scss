@@ -7,6 +7,16 @@ header {
   justify-content: space-between;
 
   .brand {
-    font-size: 32px;
+    font-size: 24px;
+  }
+
+  .navbar {
+    .navbar-items {
+      list-style: none;
+
+      .navbar-item {
+        display: inline;
+      }
+    }
   }
 }

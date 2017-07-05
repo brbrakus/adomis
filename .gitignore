@@ -1,2 +1,4 @@
-public
 node_modules
+
+public/style.css
+public/bundle.js
