@@ -1,0 +1,29 @@
+{
+  "name": "adomis",
+  "version": "1.0.0",
+  "description": "Static web site for the Astronomical Society of Omis.",
+  "main": "index.js",
+  "watches": {
+    "sass": "styles/**"
+  },
+  "scripts": {
+    "sass": "node-sass styles/ -o public/",
+    "dev": "rerun-script"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brbrakus/adomis.git"
+  },
+  "keywords": [],
+  "author": "Bruna Brakus, Miro Dojkic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brbrakus/adomis/issues"
+  },
+  "homepage": "https://github.com/brbrakus/adomis#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "rerun-script": "^0.6.0"
+  }
+}
