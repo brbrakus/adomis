@@ -4,14 +4,15 @@
   "description": "Static web site for the Astronomical Society of Omis.",
   "main": "index.js",
   "watches": {
-    "css": "styles/**",
-    "js": "js/**"
+    "build:css": "styles/**",
+    "build:js": "js/**"
   },
   "scripts": {
     "sass": "node-sass styles/main.scss public/style.css",
     "autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss --use cssnano -o public/style.css",
-    "css": "npm run sass && npm run autoprefixer",
-    "js": "rollup -c",
+    "lint": "eslint -c .eslintrc.json --color js/**",
+    "build:css": "npm run sass && npm run autoprefixer",
+    "build:js": "npm run lint && rollup -c",
     "watch": "rerun-script"
   },
   "repository": {
@@ -29,6 +30,9 @@
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "cssnano": "^3.10.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.1",
     "node-sass": "^4.5.3",
     "postcss": "^6.0.6",
     "postcss-cli": "^4.1.0",
