@@ -7,7 +7,7 @@
     "sass": "styles/**"
   },
   "scripts": {
-    "sass": "node-sass styles/ -o public/",
+    "sass": "node-sass styles/main.scss public/style.css",
     "dev": "rerun-script"
   },
   "repository": {
@@ -23,7 +23,6 @@
   "homepage": "https://github.com/brbrakus/adomis#readme",
   "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.5.3",
     "rerun-script": "^0.6.0"
   }
 }
