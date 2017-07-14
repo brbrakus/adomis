@@ -7,13 +7,17 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  font-family: 'PT Sans', sans-serif;
+  color: #0e467e;
+
   .brand {
     margin-left: 4vw;
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .navbar {
     margin-right: 7vw;
+
 
     .navbar-items {
       display: flex;
@@ -23,6 +27,8 @@ header {
 
       .navbar-item {
         display: inline;
+
+        text-transform: uppercase;
       }
     }
   }
