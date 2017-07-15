@@ -1,3 +1,6 @@
+$link-color: #003060;
+$link-hovered-color: #345980;
+
 header {
   display: flex;
   width: 100vw;
@@ -7,28 +10,51 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  font-family: 'PT Sans', sans-serif;
-  color: #0e467e;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: $link-color;
 
   .brand {
     margin-left: 4vw;
-    font-size: 18px;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $link-color;
+
+      img {
+        width: 6vw;
+      }
+
+      h1 {
+        margin-left: 2vw;
+        font-size: 26px;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+      }
+    }
   }
 
   .navbar {
     margin-right: 7vw;
 
-
     .navbar-items {
       display: flex;
       width: 30vw;
-
       justify-content: space-around;
 
       .navbar-item {
         display: inline;
-
         text-transform: uppercase;
+        font-weight: 500;
+
+        a:visited{
+          color: $link-color;
+        }
+
+        a:hover{
+          color: $link-hovered-color;
+        }
       }
     }
   }
