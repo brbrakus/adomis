@@ -1,28 +1,68 @@
+$link-color: #003060;
+$link-hovered-color: #345980;
+
 header {
   display: flex;
+  width: 100%;
   width: 100vw;
   height: 70px;
 
+  position: fixed;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
+  background-color: white;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: $link-color;
+
   .brand {
+    margin-left: 4%;
     margin-left: 4vw;
-    font-size: 24px;
+
+    a {
+      display: flex;
+      align-items: center;
+      color: $link-color;
+
+      img {
+        width: 64px;
+      }
+
+      h1 {
+        width: 393px;
+        width: 28vw;
+        margin-left: 6%;
+        margin-left: 2vw;
+
+        font-size: 26px;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+      }
+    }
   }
 
-  .navbar {
+  .navbar-items {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    width: 30vw;
+    margin-right: 7%;
     margin-right: 7vw;
 
-    .navbar-items {
-      display: flex;
-      width: 30vw;
+    .navbar-item {
+      display: inline;
+      text-transform: uppercase;
+      font-weight: 500;
 
-      justify-content: space-around;
+      a:visited{
+        color: $link-color;
+      }
 
-      .navbar-item {
-        display: inline;
+      a:hover{
+        color: $link-hovered-color;
       }
     }
   }
