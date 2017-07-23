@@ -1,17 +1,20 @@
 .main-slider {
+  position: relative;
 
   .main-slider-arrow {
     display: flex;
     flex-flow: column nowrap;
 
-    height: 60.5vh;
-    width: 138px;
+    height: 100%;
+    width: 10%;
+    width: 10vw;
 
     align-items: center;
     justify-content: center;
     z-index: 3;
 
     font-size: 42px;
+    font-size: 5vw;
     color: transparent;
     background-color: transparent;
     cursor: pointer;
@@ -41,6 +44,8 @@
   }
 
   img {
+    display: block;
+
     width: 100%;
     width: 100vw;
   }
