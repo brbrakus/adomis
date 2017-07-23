@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 
+$link-color: #1c3664;
+$link-hovered-color: #cc6600;
+$font-color-dark: #0e1b32;
+
 *, html, body {
   padding: 0;
   margin: 0;
 
   box-sizing: border-box;
+
+  font-family: 'Raleway', sans-serif;
 }
 
-html, body, .content {
+html, body {
   height: 100%;
   width: 100%;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 24px;
+}
+
+p{
+  font-size: 16px;
 }
 
 a {
@@ -22,7 +40,9 @@ ul {
 
 .content {
   padding-top: 70px;
+
 }
 
 @import 'header';
 @import 'mainSlider';
+@import 'aboutUs';
