@@ -36,8 +36,13 @@
       </div>
 
       <div class="main-slider-item">
-        <img src="public/assets/images/banner-small.jpg" srcset="public/assets/images/banner-medium.jpg 1365w, public/assets/images/banner-large.jpg 2560w" alt="banner">
+        <picture>
+          <source srcset="public/assets/images/banner-medium.jpg" media="(min-width: 1365px)">
+          <source srcset="public/assets/images/banner-large.jpg" media="(min-width: 2560px)">
+          <img src="public/assets/images/banner-small.jpg" alt="MDN">
+        </picture>
       </div>
+
     </div>
   </section>
 
