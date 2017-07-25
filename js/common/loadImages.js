@@ -2,17 +2,19 @@ import images from '../constants/images';
 
 export default () => {
   const sliderImagePlaceholder = document.querySelector('.slider-image-placeholder');
-  const imgLarge = new Image();
+  const image = new Image();
 
   if (window.matchMedia('(min-width: 2560px)').matches) {
-    imgLarge.src = images.sliderImageLarge
+    image.src = images.sliderImageLarge
   } else if (window.matchMedia('(min-width: 1365px)').matches) {
-    imgLarge.src = images.sliderImageMedium
+    image.src = images.sliderImageMedium
   } else {
-    imgLarge.src = images.sliderImageSmall
+    image.src = images.sliderImageSmall
   }
 
-  imgLarge.onload = () => {
-    sliderImagePlaceholder.appendChild(imgLarge);
+  image.onload = () => {
+    const placeholderImage = document.querySelector('.slider-image-placeholder .placeholder-image')
+    placeholderImage.classList.add('loaded')
+    sliderImagePlaceholder.appendChild(image);
   };
 };
