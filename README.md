@@ -18,3 +18,6 @@ To build javascript run:
 
 To compile sass and build css run:
 `npm run build:css`
+
+To deploy to [Surge](https://adomis.surge.sh) run:
+`npm run deploy`
