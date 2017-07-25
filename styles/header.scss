@@ -1,6 +1,3 @@
-$link-color: #1c3664;
-$link-hovered-color: #cc6600;
-
 header {
   display: flex;
   width: 100%;
@@ -15,9 +12,9 @@ header {
 
   background-color: white;
 
-  font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: $link-color;
+  box-shadow: 3px 0px 6px gray;
 
   .brand {
     margin-left: 4%;
@@ -58,11 +55,11 @@ header {
       text-transform: uppercase;
       font-weight: 500;
 
-      a:visited{
+      a:visited {
         color: $link-color;
       }
 
-      a:hover{
+      a:hover {
         color: $link-hovered-color;
       }
     }
