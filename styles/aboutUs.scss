@@ -39,15 +39,19 @@
       margin: 20px;
 
       .about-us-icon {
-        display: inline-block;
+        display: inline-flex;
+        height: 57px;
         width: 57px;
 
         margin-bottom: 20px;
         padding: 12px;
 
-        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 26px;
         text-align: center;
-        color: $link-color-hover;
+        color: $link-hovered-color;
 
         border-radius: 100%;
         box-shadow: 3px 3px 6px grey;

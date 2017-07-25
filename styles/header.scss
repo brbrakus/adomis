@@ -23,7 +23,6 @@ header {
     a {
       display: flex;
       align-items: center;
-      color: $link-color;
 
       img {
         width: 54px;
@@ -54,14 +53,6 @@ header {
       display: inline;
       text-transform: uppercase;
       font-weight: 500;
-
-      a:visited {
-        color: $link-color;
-      }
-
-      a:hover {
-        color: $link-hovered-color;
-      }
     }
   }
 }
