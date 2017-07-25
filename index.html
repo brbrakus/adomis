@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="public/assets/icons/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/style.css">
+  <script type="text/javascript" src="public/bundle.js"></script>
 </head>
 
 <body id="top">
@@ -28,6 +29,7 @@
 
   <section class="content">
     <div class="main-slider">
+
       <div class="main-slider-arrow arrow-left">
         <i class="fa fa-caret-left"></i>
       </div>
@@ -36,11 +38,12 @@
       </div>
 
       <div class="main-slider-item">
-        <picture>
-          <source srcset="public/assets/images/banner-medium.jpg" media="(min-width: 1365px)">
-          <source srcset="public/assets/images/banner-large.jpg" media="(min-width: 2560px)">
-          <img src="public/assets/images/banner-small.jpg" alt="MDN">
-        </picture>
+        <div class="slider-image-placeholder">
+          <picture>
+            <source media="(min-width: 1365px)" srcset="public/assets/images/banner-compressed-medium.jpg">
+            <img src="public/assets/images/banner-compressed-small.jpg" alt="Flowers" style="width:auto;">
+          </picture>
+        </div>
       </div>
 
     </div>
@@ -50,6 +53,5 @@
 
   </footer>
 
-  <script type="text/javascript" src="public/bundle.js"></script>
 </body>
 </html>

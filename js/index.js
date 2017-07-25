@@ -1,1 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {})
+import loadImages from './common/loadImages'
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadImages()
+})
