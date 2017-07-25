@@ -16,7 +16,7 @@
     width: 100%;
     width: 100vw;
     flex-flow: column nowrap;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   p {
@@ -33,10 +33,22 @@
     text-align: left;
 
     .about-us-card {
-      margin: 30px;
+      margin: 20px;
       width: 34%;
       width: 24vw;
       max-width: 344px;
+
+      .about-us-icon {
+        margin-bottom: 20px;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        width: 57px;
+        padding: 12px;
+        color: $link-color-hover;
+        border-radius: 100%;
+        box-shadow: 3px 3px 6px grey;
+      }
     }
   }
 }
