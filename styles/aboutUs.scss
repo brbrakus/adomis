@@ -1,0 +1,57 @@
+.about-us {
+  display: flex;
+  width: 100%;
+  width: 100vw;
+  flex-flow: column nowrap;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  align-items: center;
+  text-align: center;
+  color: $font-color-dark;
+
+  .about-us-header {
+    display: flex;
+    width: 100%;
+    width: 100vw;
+    flex-flow: column nowrap;
+    margin-bottom: 20px;
+  }
+
+  p {
+    padding-top: 10px;
+  }
+
+  .about-us-cards {
+    display: flex;
+    width: 65%;
+    width: 65vw;
+    flex-flow: row wrap;
+
+    justify-content: space-around;
+    text-align: left;
+
+    .about-us-card {
+      width: 34%;
+      width: 24vw;
+      max-width: 344px;
+      margin: 20px;
+
+      .about-us-icon {
+        display: inline-block;
+        width: 57px;
+
+        margin-bottom: 20px;
+        padding: 12px;
+
+        font-size: 20px;
+        text-align: center;
+        color: $link-color-hover;
+
+        border-radius: 100%;
+        box-shadow: 3px 3px 6px grey;
+      }
+    }
+  }
+}
