@@ -4,7 +4,9 @@ $link-color: #1c3664;
 $link-hovered-color: #cc2b00;
 $font-color-dark: #0e1b32;
 
-*, html, body {
+*,
+html,
+body {
   padding: 0;
   margin: 0;
 
@@ -13,20 +15,21 @@ $font-color-dark: #0e1b32;
   font-family: 'Raleway', sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
-h1{
+h1 {
   font-size: 40px;
 }
 
-h2{
+h2 {
   font-size: 24px;
 }
 
-p{
+p {
   font-size: 16px;
 }
 
