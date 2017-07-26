@@ -8,7 +8,7 @@
   padding-bottom: 100px;
   align-items: center;
 
-  background-image: linear-gradient(45deg, #1c3664, #4474a4);
+  background-image: linear-gradient(45deg, #224361, #4c8fc3);
 
   .equipment-header {
     display: flex;
@@ -25,8 +25,8 @@
 
   .equipment-cards {
     display: flex;
-    width: 50%;
-    width: 50vw;
+    width: 60%;
+    width: 60vw;
     flex-flow: row wrap;
 
     margin-bottom: 30px;
@@ -34,7 +34,10 @@
     text-align: left;
 
     .equipment-card {
-      background-color: white;
+      position: flex;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       width: 350px;
       height: 450px;
 
@@ -42,18 +45,31 @@
       border-radius: 15px;
       box-shadow: 2px 0px 20px rgba(0,0,0,0.2);
 
+      &:nth-of-type(1) {
+        background-image: url("assets/images/teleskop1_full.jpg");
+        background-color: white;
+      }
+
+      &:nth-of-type(2) {
+        background-image: url("assets/images/teleskop2_full.jpg");
+        background-color: white;
+      }
+
       h3 {
-        padding-top: 20px;
+        padding-top: 10px;
       }
 
       .equipment-image {
-        position: fixed;
-        height: 400px;
+        position: flex;
+        width: 350px;
+        height: 450px;
       }
 
       .equipment-info {
         padding-top: 30px;
+        line-height: 20px;
       }
+
     }
   }
 }
