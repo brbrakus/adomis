@@ -1,7 +1,7 @@
 # Adomis
 Static web site for the Astronomical Society of Omis.
 
-[Look it up!](http://adomis.hr)
+[Look it up!](http://adomis.surge.sh)
 
 # Run locally
 Open `index.html` in your browser.
