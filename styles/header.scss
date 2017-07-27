@@ -24,6 +24,10 @@ header {
       display: flex;
       align-items: center;
 
+      &:hover {
+      color: $link-color;
+      }
+
       img {
         width: 54px;
       }

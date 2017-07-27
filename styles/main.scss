@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 
-$link-color: #1c3664;
-$link-hovered-color: #cc2b00;
-$font-color-dark: #0e1b32;
+$link-color: #363795;
+$link-hovered-color: #fd7c65;
+$font-color-dark: #001726;
 
 *,
 html,
@@ -64,4 +64,4 @@ ul {
 @import 'header';
 @import 'mainSlider';
 @import 'aboutUs';
-@import 'equipmentSection'
+@import 'equipmentSection';
