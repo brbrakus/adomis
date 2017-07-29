@@ -71,15 +71,21 @@
       }
 
       .equipment-info {
-        display: none;
+        display: block;
         padding-top: 30px;
+
+        opacity: 0;
         line-height: 20px;
+        transition: none;
       }
 
       &:hover {
+        background-image: none;
+
         .equipment-info {
-          display: block;
           background-color: white;
+          opacity: 1;
+          transition: opacity 0.5s linear;
         }
       }
     }

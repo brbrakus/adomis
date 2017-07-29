@@ -13,7 +13,8 @@
     "lint": "eslint -c .eslintrc.json --color js/**",
     "build:css": "npm run sass && npm run autoprefixer",
     "build:js": "npm run lint && rollup -c",
-    "watch": "rerun-script",
+    "build": "npm run build:js && npm run build:css",
+    "watch": "npm run build && rerun-script",
     "deploy": "surge ./ https://adomis.surge.sh"
   },
   "repository": {
