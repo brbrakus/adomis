@@ -77,13 +77,24 @@
       }
 
       .equipment-info {
-        display: block;
+        display: flex;
+        height: 100%;
         padding-top: 30px;
+        flex-flow: column wrap;
+        justify-content: space-around;
 
         background-color: transparent;
         opacity: 0;
         line-height: 20px;
         transition: none;
+
+        .equipment-info-prop-title {
+          font-weight: 600;
+        }
+
+        li {
+          margin-bottom: 8px;
+        }
       }
 
       &:hover {
