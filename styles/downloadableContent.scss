@@ -1,0 +1,19 @@
+.downloadable-content {
+  display: flex;
+  width: 100%;
+  width: 100vw;
+  flex-flow: column nowrap;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  align-items: center;
+  text-align: center;
+  color: $font-color-dark;
+
+  h2 {
+    width: 50%;
+    width: 50vw;
+    font-weight: 500;
+  }
+}
