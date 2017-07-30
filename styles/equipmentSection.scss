@@ -46,12 +46,10 @@
 
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.8);
 
       h3{
         text-align: center;
-        padding-bottom: 5px;
-        border-bottom: 3px solid #ECF0F1;
       }
 
       &:nth-of-type(1) {
@@ -71,7 +69,6 @@
       }
 
       .equipment-image {
-        position: flex;
         width: 350px;
         height: 450px;
       }
@@ -79,7 +76,7 @@
       .equipment-info {
         display: flex;
         height: 100%;
-        padding-top: 30px;
+        padding-top: 20px;
         flex-flow: column wrap;
         justify-content: space-around;
 
@@ -100,6 +97,7 @@
       &:hover {
         background-image: none;
         background-color:#ECF0F1;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
         .equipment-info {
           opacity: 1;
