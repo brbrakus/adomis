@@ -1,0 +1,109 @@
+.equipment-section {
+  display: flex;
+  width: 100%;
+  width: 100vw;
+  flex-flow: column nowrap;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+
+  background-color: #2980b9;
+
+  .equipment-header {
+    display: flex;
+    width: 100%;
+    width: 100vw;
+    flex-flow: column nowrap;
+    margin-bottom: 100px;
+
+    h1 {
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .equipment-cards {
+    display: flex;
+    width: 60%;
+    width: 60vw;
+    flex-flow: row wrap;
+
+    margin-bottom: 30px;
+    justify-content: space-around;
+    text-align: left;
+
+    .equipment-card {
+      display: flex;
+      flex-flow: column nowrap;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 310px;
+      height: 430px;
+
+      color: $link-color;
+
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.8);
+
+      h3 {
+        text-align: center;
+      }
+
+      &:nth-of-type(1) {
+        background-image: url("assets/images/teleskop1_full.jpg");
+        background-position-y: 100px;
+        background-color: white;
+      }
+
+      &:nth-of-type(2) {
+        background-image: url("assets/images/teleskop2_full.jpg");
+        background-position-y: 80px;
+        background-color: white;
+      }
+
+      h3 {
+        padding-top: 10px;
+      }
+
+      .equipment-image {
+        width: 350px;
+        height: 450px;
+      }
+
+      .equipment-info {
+        display: flex;
+        height: 100%;
+        padding-top: 20px;
+        flex-flow: column wrap;
+        justify-content: space-around;
+
+        background-color: transparent;
+        opacity: 0;
+        line-height: 20px;
+        transition: none;
+
+        .equipment-info-prop-title {
+          font-weight: 600;
+        }
+
+        li {
+          margin-bottom: 8px;
+        }
+      }
+
+      &:hover {
+        background-image: none;
+        background-color: $card-hover-color;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+        .equipment-info {
+          opacity: 1;
+          transition: opacity 0.5s linear;
+        }
+      }
+    }
+  }
+}
