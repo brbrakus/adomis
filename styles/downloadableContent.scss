@@ -11,9 +11,32 @@
   text-align: center;
   color: $font-color-dark;
 
+    h1 {
+    padding-top: 30px;
+    }
+
   h2 {
-    width: 50%;
-    width: 50vw;
+    width: 70%;
+    width: 70vw;
     font-weight: 500;
+  }
+
+  .downloadable-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 40vw;
+    width: 40%;
+    justify-content: space-between;
+
+    margin-top: 100px;
+
+    .downloadable-icon {
+      font-size: 100px;
+      color: $link-hovered-color;
+    }
+
+    h3 {
+      color: $font-color-dark;
+    }
   }
 }
