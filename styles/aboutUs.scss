@@ -4,12 +4,17 @@
   width: 100vw;
   flex-flow: column nowrap;
 
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 100px;
 
   align-items: center;
   text-align: center;
   color: $font-color-dark;
+
+  background-image: url(assets/images/planet.svg);
+  background-size: 500px 500px;
+  background-repeat: no-repeat;
+  background-position: 115% -45%;
 
   .about-us-header {
     display: flex;
