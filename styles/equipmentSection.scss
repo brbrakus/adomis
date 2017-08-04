@@ -16,11 +16,6 @@
     width: 100vw;
     flex-flow: column nowrap;
     margin-bottom: 100px;
-
-    h1 {
-      color: white;
-      text-align: center;
-    }
   }
 
   .equipment-cards {
@@ -43,33 +38,28 @@
       height: 380px;
 
       color: $link-color;
+      background-color: #fff;
 
       padding: 20px;
       border-radius: 5px;
       box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.8);
 
-      h3 {
+      h2 {
         text-align: center;
+        padding-top: 10px;
+        letter-spacing: 0em;
       }
 
       &:nth-of-type(1) {
         background-image: url("assets/images/teleskop1_full.jpg");
         background-size: 280px;
         background-position-y: 80px;
-        background-color: white;
-        opacity: 0.9;
       }
 
       &:nth-of-type(2) {
         background-image: url("assets/images/teleskop2_full.jpg");
         background-size: 280px;
         background-position-y: 80px;
-        background-color: white;
-        opacity: 0.9;
-      }
-
-      h3 {
-        padding-top: 10px;
       }
 
       .equipment-image {
@@ -100,8 +90,7 @@
 
       &:hover {
         background-image: none;
-        background-color: white;
-        opacity: 0.9;
+        background-color: $font-color-bright;
         box-shadow: 6px 6px 0px $link-hovered-color;
 
         .equipment-info {

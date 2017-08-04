@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 
-$link-color: #0f0d0f;
-$link-hovered-color: #e74c3c;
-$font-color-dark: #0f0d0f;
-$font-color-bright: #6b686b;
-$card-hover-color: #ecf0f1;
-$bg-color: #0f0d0f;
+$link-color: #140f30;
+$link-hovered-color: #ed403a;
+$font-color-dark: $link-color;
+$font-color-medium: #0760b7;
+$font-color-bright: #e7e7e9;
+$card-hover-color: $font-color-bright;
+$bg-color: $link-color;
 $text-shadow-color: rgba(0, 0, 0, 0.2);
 
 *,
@@ -26,12 +27,18 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
+  font-weight: 300;
+  text-align: center;
+  color: $font-color-medium;
   text-shadow: 0px 1px 2px $text-shadow-color;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $font-color-medium;
 }
 
 h3 {
@@ -45,6 +52,7 @@ p {
 a {
   color: $link-color;
   text-decoration: none;
+  transition: color 0.3s ease;
 
   &:hover {
     color: $link-hovered-color;
@@ -60,7 +68,7 @@ ul {
 }
 
 .content {
-  padding-top: 55px;
+  padding-top: 65px;
 }
 
 .onsite-anchor {
