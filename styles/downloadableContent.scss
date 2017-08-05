@@ -1,0 +1,60 @@
+.downloadable-content {
+  display: flex;
+  width: 100%;
+  width: 100vw;
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+  color: $font-color-bright;
+
+  background-color: $bg-color;
+  background-image: url(assets/images/teleskop.svg);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: -5% 5%;
+
+  h1 {
+    padding-top: 40px;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    color: $font-color-bright;
+
+    &:hover {
+      color: $link-hovered-color;
+    }
+  }
+
+  h2 {
+    width: 60%;
+    width: 60vw;
+    font-weight: 200;
+    color: $font-color-bright;
+  }
+
+  h3 {
+    font-weight: 100;
+    color: $font-color-bright;
+  }
+
+  .downloadable-icons {
+    display: flex;
+    width: 40vw;
+    width: 40%;
+    margin-top: 150px;
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    .downloadable-icon {
+      font-size: 100px;
+      color: $font-color-medium;
+
+      &:hover {
+        color: $link-hovered-color;
+      }
+    }
+  }
+}

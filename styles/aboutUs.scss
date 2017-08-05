@@ -2,21 +2,26 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  flex-flow: column nowrap;
 
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 100px;
 
+  flex-flow: column nowrap;
   align-items: center;
   text-align: center;
   color: $font-color-dark;
+
+  background-image: url(assets/images/planet.svg);
+  background-size: 500px 500px;
+  background-position: 115% -45%;
+  background-repeat: no-repeat;
 
   .about-us-header {
     display: flex;
     width: 100%;
     width: 100vw;
-    flex-flow: column nowrap;
     margin-bottom: 60px;
+    flex-flow: column nowrap;
   }
 
   p {
@@ -27,8 +32,8 @@
     display: flex;
     width: 65%;
     width: 65vw;
-    flex-flow: row wrap;
 
+    flex-flow: row wrap;
     justify-content: space-around;
     text-align: left;
 
@@ -40,8 +45,8 @@
 
       .about-us-icon {
         display: inline-flex;
-        height: 57px;
         width: 57px;
+        height: 57px;
 
         margin-bottom: 20px;
         padding: 12px;
@@ -49,12 +54,30 @@
         justify-content: center;
         align-items: center;
 
-        font-size: 26px;
         text-align: center;
+        font-size: 26px;
+        color: $link-hovered-color;
+        border-radius: 100%;
+        box-shadow: 3px 3px 6px $text-shadow-color;
+      }
+
+      .about-us-icon-telescope {
+        display: inline-flex;
+        width: 57px;
+        height: 57px;
+
+        margin-bottom: 20px;
+        padding: 12px;
+
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-size: 34px;
         color: $link-hovered-color;
 
         border-radius: 100%;
-        box-shadow: 3px 3px 6px grey;
+        box-shadow: 3px 3px 6px $text-shadow-color;
       }
     }
   }
