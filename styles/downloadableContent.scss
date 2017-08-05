@@ -2,11 +2,10 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  flex-flow: column nowrap;
-
   padding-top: 150px;
   padding-bottom: 100px;
 
+  flex-flow: column nowrap;
   align-items: center;
   text-align: center;
   color: $font-color-bright;
@@ -44,10 +43,10 @@
     display: flex;
     width: 40vw;
     width: 40%;
+    margin-top: 150px;
+
     flex-flow: row nowrap;
     justify-content: space-between;
-
-    margin-top: 150px;
 
     .downloadable-icon {
       font-size: 100px;
