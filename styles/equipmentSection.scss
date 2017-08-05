@@ -38,15 +38,15 @@
       height: 380px;
 
       color: $link-color;
-      background-color: #fff;
+      background-color: $color-white;
 
       padding: 20px;
       border-radius: 5px;
       box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.8);
 
       h2 {
-        text-align: center;
         padding-top: 10px;
+        text-align: center;
         letter-spacing: 0em;
       }
 
@@ -69,12 +69,11 @@
 
       .equipment-info {
         display: flex;
-        height: 100%;
-        padding-top: 20px;
         flex-flow: column wrap;
         justify-content: space-around;
+        height: 100%;
+        padding-top: 20px;
 
-        background-color: transparent;
         opacity: 0;
         line-height: 20px;
         transition: none;
@@ -94,7 +93,7 @@
         box-shadow: 6px 6px 0px $link-hovered-color;
 
         .equipment-info {
-          opacity: 5;
+          opacity: 1;
           transition: opacity 0.8s linear;
         }
       }
