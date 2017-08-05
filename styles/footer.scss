@@ -13,10 +13,10 @@ footer {
   opacity: 0.9;
 
   p {
-  padding-left: 4%;
-  padding-left: 4vw;
+    padding-left: 4%;
+    padding-left: 4vw;
 
-  font-size: 15px;
+    font-size: 15px;
   }
 
   .social-icons {
@@ -27,18 +27,24 @@ footer {
     margin-right: 7vw;
     justify-content: space-around;
 
-    font-size: 22px;
+    font-size: 18px;
+
+    .social-icon {
+      display: inline-flex;
+      width: 25px;
+      justify-content: center;
+      align-items: center;
+    }
 
     a {
+      display: flex;
+      width: 100%;
+      justify-content: center;
       color: $font-color-bright;
 
       &:hover {
         color: $link-hovered-color;
       }
-    }
-
-    .social-icon{
-      display: inline;
     }
   }
 }

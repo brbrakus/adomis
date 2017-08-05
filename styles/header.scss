@@ -14,7 +14,7 @@ header {
 
   font-weight: bold;
   color: $link-color;
-  box-shadow: 3px 0px 6px gray;
+  box-shadow: 3px 0px 6px $text-shadow-color;
 
   .brand {
     margin-left: 4%;
@@ -48,7 +48,7 @@ header {
   }
 
   .navbar-items {
-    display: flex;
+    display: inline-flex;
     width: 30%;
     width: 30vw;
     margin-right: 7%;
@@ -61,6 +61,11 @@ header {
     .navbar-item {
       display: inline;
       font-weight: 500;
+
+
+      &.navbar-fb {
+        width: 30px;
+      }
     }
   }
 }
