@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  width: 100%;
+  width: 100vw;
+  height: 65px;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $font-color-dark;
+  color: $font-color-bright;
+  opacity: 0.9;
+
+  p {
+  padding-left: 4%;
+  padding-left: 4vw;
+
+  font-size: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    width: 10%;
+    width: 10vw;
+    margin-right: 7%;
+    margin-right: 7vw;
+    justify-content: space-around;
+
+    font-size: 20px;
+
+    a {
+      color: $font-color-bright;
+
+      &:hover {
+        color: $link-hovered-color;
+      }
+    }
+
+    .social-icon{
+      display: inline;
+    }
+  }
+}

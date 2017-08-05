@@ -23,6 +23,7 @@ header {
     a {
       display: flex;
       align-items: center;
+      color: $link-color;
 
       &:hover {
         color: $link-color;
