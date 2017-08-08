@@ -42,7 +42,7 @@
 
       color: $link-color;
       border-radius: 5px;
-      box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.8);
+      box-shadow: 6px 5px 0px rgba(100, 100, 100, 1);
 
       h2 {
         padding-top: 10px;
@@ -91,7 +91,7 @@
       &:hover {
         background-image: none;
         background-color: $font-color-bright;
-        box-shadow: 6px 6px 0px $link-hovered-color;
+        box-shadow: 6px 5px 0px $link-hovered-color;
 
         .equipment-info {
           opacity: 1;

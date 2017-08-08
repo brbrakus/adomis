@@ -12,11 +12,53 @@ footer {
   color: $font-color-bright;
   opacity: 0.9;
 
-  p {
+  h4 {
     padding-left: 4%;
     padding-left: 4vw;
 
     font-size: 15px;
+    font-weight: 100;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+
+    .location {
+      p {
+        display: none;
+        position: absolute;
+      }
+
+      i {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &:nth-of-type(1) {
+        &:hover {
+          i {
+            color: $link-hovered-color;
+          }
+          p {
+            display: inline-block;
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        &:hover {
+          i {
+            color: $link-hovered-color;
+          }
+          p {
+            display: flex;
+          }
+        }
+      }
+    }
   }
 
   .social-icons {
@@ -26,6 +68,7 @@ footer {
     margin-right: 7%;
     margin-right: 7vw;
     justify-content: space-around;
+    flex-flow: row nowrap;
 
     font-size: 18px;
 
