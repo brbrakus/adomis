@@ -22,7 +22,6 @@
     display: flex;
     width: 60%;
     width: 60vw;
-    margin-bottom: 30px;
 
     flex-flow: row wrap;
     justify-content: space-around;
@@ -33,16 +32,19 @@
       width: 340px;
       height: 380px;
       padding: 20px;
+      margin-bottom: 30px;
       flex-flow: column nowrap;
 
+      background-size: 280px;
       background-position: center;
-      background-size: contain;
+      background-position-y: 80px;
       background-repeat: no-repeat;
       background-color: $color-white;
 
       color: $link-color;
       border-radius: 5px;
-      box-shadow: 6px 5px 0px rgba(100, 100, 100, 1);
+      box-shadow: 0px 3px 6px $text-shadow-color;
+      box-shadow: inset 0px 0px 20px 10px $text-shadow-color;
 
       h2 {
         padding-top: 10px;
@@ -52,14 +54,10 @@
 
       &:nth-of-type(1) {
         background-image: url("assets/images/teleskop1_full.jpg");
-        background-size: 280px;
-        background-position-y: 80px;
       }
 
       &:nth-of-type(2) {
         background-image: url("assets/images/teleskop2_full.jpg");
-        background-size: 280px;
-        background-position-y: 80px;
       }
 
       .equipment-image {
@@ -90,8 +88,9 @@
 
       &:hover {
         background-image: none;
-        background-color: $font-color-bright;
-        box-shadow: 6px 5px 0px $link-hovered-color;
+        opacity: 1;
+        box-shadow: inset 0px 0px 20px 10px $color-white;
+        transition: box-shadow 0.2s ease-in-out;
 
         .equipment-info {
           opacity: 1;

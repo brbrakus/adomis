@@ -13,8 +13,11 @@ footer {
   opacity: 0.9;
 
   h4 {
+    display: flex;
     padding-left: 4%;
     padding-left: 4vw;
+    align-content: center;
+    flex-basis: 25vw;
 
     font-size: 15px;
     font-weight: 100;
@@ -27,9 +30,11 @@ footer {
     font-size: 18px;
 
     .location {
+      display: flex;
+
       p {
-        display: none;
-        position: absolute;
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
       }
 
       i {
@@ -37,25 +42,13 @@ footer {
         padding-right: 10px;
       }
 
-      &:nth-of-type(1) {
-        &:hover {
-          i {
-            color: $link-hovered-color;
-          }
-          p {
-            display: inline-block;
-          }
+      &:hover {
+        i {
+          color: $link-hovered-color;
         }
-      }
-
-      &:nth-of-type(2) {
-        &:hover {
-          i {
-            color: $link-hovered-color;
-          }
-          p {
-            display: flex;
-          }
+        p {
+          opacity: 1;
+          transition: opacity 400ms ease-in-out;
         }
       }
     }
@@ -63,12 +56,11 @@ footer {
 
   .social-icons {
     display: flex;
-    width: 10%;
-    width: 10vw;
     margin-right: 7%;
     margin-right: 7vw;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-flow: row nowrap;
+    flex-basis: 17vw;
 
     font-size: 18px;
 
@@ -77,6 +69,7 @@ footer {
       width: 25px;
       justify-content: center;
       align-items: center;
+      margin-right: 6px;
     }
 
     a {
