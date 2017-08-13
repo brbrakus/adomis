@@ -12,20 +12,57 @@ footer {
   color: $font-color-bright;
   opacity: 0.9;
 
-  p {
+  h4 {
+    display: flex;
     padding-left: 4%;
     padding-left: 4vw;
+    align-content: center;
+    flex-basis: 25%;
+    flex-basis: 25vw;
 
     font-size: 15px;
+    font-weight: 100;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+
+    .location {
+      display: flex;
+
+      p {
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+      }
+
+      i {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &:hover {
+        i {
+          color: $link-hovered-color;
+        }
+        p {
+          opacity: 1;
+          transition: opacity 400ms ease-in-out;
+        }
+      }
+    }
   }
 
   .social-icons {
     display: flex;
-    width: 10%;
-    width: 10vw;
     margin-right: 7%;
     margin-right: 7vw;
-    justify-content: space-around;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    flex-basis: 17%;
+    flex-basis: 17vw;
 
     font-size: 18px;
 
@@ -34,11 +71,13 @@ footer {
       width: 25px;
       justify-content: center;
       align-items: center;
+      margin-right: 6px;
     }
 
     a {
       display: flex;
       width: 100%;
+      width: 100vw;
       justify-content: center;
       color: $font-color-bright;
 
