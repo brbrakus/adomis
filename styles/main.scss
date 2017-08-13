@@ -4,9 +4,9 @@ $link-color: #021223;
 $link-hovered-color: #ed403a;
 $font-color-dark: $link-color;
 $font-color-medium: #0760b7;
-$font-color-bright: #e7e7e9;
+$font-color-bright: #fff;
 $card-hover-color: $font-color-bright;
-$color-white: #fff;
+$color-white: $font-color-bright;
 $bg-color: $link-color;
 $text-shadow-color: rgba(0, 0, 0, 0.2);
 

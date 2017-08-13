@@ -17,6 +17,7 @@ footer {
     padding-left: 4%;
     padding-left: 4vw;
     align-content: center;
+    flex-basis: 25%;
     flex-basis: 25vw;
 
     font-size: 15px;
@@ -60,6 +61,7 @@ footer {
     margin-right: 7vw;
     justify-content: flex-end;
     flex-flow: row nowrap;
+    flex-basis: 17%;
     flex-basis: 17vw;
 
     font-size: 18px;
@@ -75,6 +77,7 @@ footer {
     a {
       display: flex;
       width: 100%;
+      width: 100vw;
       justify-content: center;
       color: $font-color-bright;
 
