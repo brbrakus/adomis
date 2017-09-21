@@ -2,7 +2,7 @@ header {
   display: flex;
   width: 100%;
   width: 100vw;
-  height: 65px;
+  height: 70px;
 
   position: fixed;
   flex-direction: row;
@@ -49,23 +49,60 @@ header {
 
   .hamburger-menu {
     display: flex;
-    flex-flow: column nowrap;
-    height: 27px;
+    height: 23px;
     width: 32px;
 
+    flex-flow: column nowrap;
+    justify-content: space-around;
     position: absolute;
     right: 28px;
 
-    justify-content: space-around;
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 
     span {
       display: block;
       height: 4px;
-      width: 32px;
+      width: 100%;
+      position: absolute;
+      left: 0;
 
       border-radius: 3px;
       background-color: $font-color-dark;
+
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 9px;
+      }
+
+      &:nth-child(4) {
+        top: 18px;
+      }
+    }
+
+    &.active {
+      span {
+        &:nth-child(1),
+        &:nth-child(4) {
+          width: 0%;
+          top: 9px;
+          left: 50%;
+        }
+
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+      }
     }
   }
 
@@ -80,14 +117,15 @@ header {
     padding-top: 10px;
 
     position: absolute;
-    top: 65px;
+    top: 69px;
 
     justify-content: space-around;
     align-items: center;
 
+    border-top: 1px solid lightgray;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    background: white;
+    background: $color-white;
     font-size: 1.25rem;
 
     .navbar-item {
@@ -95,10 +133,6 @@ header {
       margin-left: 6px;
 
       font-weight: 500;
-
-      &.navbar-fb {
-        width: 30px;
-      }
     }
 
     &.active {
@@ -113,8 +147,8 @@ header {
       display: flex;
       flex-flow: row nowrap;
       height: auto;
-      width: 32%;
-      width: 32vw;
+      width: 40%;
+      width: 40vw;
 
       margin-right: 7%;
       margin-right: 7vw;
@@ -124,6 +158,7 @@ header {
       top: auto;
 
       font-size: 1rem;
+      border: 0px;
 
       .navbar-item {
         margin: 0;

@@ -4,11 +4,13 @@ export default () => {
 
   hamburgerMenu.addEventListener('click', () => {
     navbarItems.classList.toggle('active')
+    hamburgerMenu.classList.toggle('active')
   })
 
   navbarItems.children.forEach(navbarItem =>
     navbarItem.addEventListener('click', () => {
       navbarItems.classList.toggle('active')
+      hamburgerMenu.classList.toggle('active')
     })
   )
 }
