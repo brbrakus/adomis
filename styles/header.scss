@@ -47,24 +47,91 @@ header {
     }
   }
 
-  .navbar-items {
-    display: inline-flex;
-    width: 30%;
-    width: 30vw;
-    margin-right: 7%;
-    margin-right: 7vw;
+  .hamburger-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 27px;
+    width: 32px;
+
+    position: absolute;
+    right: 28px;
 
     justify-content: space-around;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 4px;
+      width: 32px;
+
+      border-radius: 3px;
+      background-color: $font-color-dark;
+    }
+  }
+
+  .navbar-items {
+    display: none;
+    flex-flow: column nowrap;
+    height: 215px;
+    width: 100%;
+    width: 100vw;
+
+    padding-bottom: 25px;
+    padding-top: 10px;
+
+    position: absolute;
+    top: 65px;
+
+    justify-content: space-around;
+    align-items: center;
+
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    background: white;
+    font-size: 1.25rem;
 
     .navbar-item {
       display: inline;
+      margin-left: 6px;
+
       font-weight: 500;
 
       &.navbar-fb {
         width: 30px;
       }
+    }
+
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header {
+    .navbar-items {
+      display: flex;
+      flex-flow: row nowrap;
+      height: auto;
+      width: 30%;
+      width: 30vw;
+
+      margin-right: 7%;
+      margin-right: 7vw;
+      padding: 0;
+
+      position: relative;
+      top: auto;
+
+      font-size: 1rem;
+
+      .navbar-item {
+        margin: 0;
+      }
+    }
+
+    .hamburger-menu {
+      display: none;
     }
   }
 }
