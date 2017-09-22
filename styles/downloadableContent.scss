@@ -10,7 +10,7 @@
   text-align: center;
   color: $font-color-bright;
 
-  background-color: $bg-color;
+  background-color: $bg-color-dark;
   background-image: url(assets/images/telescope.svg);
   background-size: 300px 300px;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 
     .downloadable-icon {
       font-size: 100px;
-      color: $font-color-medium;
+      color: $heading-color;
 
       &:hover {
         color: $link-hovered-color;

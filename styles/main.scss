@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
 
-$link-color: #021223;
+$white: #fff;
+$grey: #d3d3d3;
+
+$font-color: #021223;
+$font-color-bright: $white;
 $link-hovered-color: #ed403a;
-$font-color-dark: $link-color;
-$font-color-medium: #0760b7;
-$font-color-bright: #fff;
-$card-hover-color: $font-color-bright;
-$color-white: $font-color-bright;
-$bg-color: $link-color;
+$card-hover-color: $white;
+$heading-color: #0760b7;
+$bg-color-accent: $heading-color;
+$bg-color-dark: $font-color;
 $text-shadow-color: rgba(0, 0, 0, 0.2);
 
 *,
@@ -31,7 +33,7 @@ h1 {
   text-align: center;
   font-size: 38px;
   font-weight: 400;
-  color: $font-color-medium;
+  color: $heading-color;
   text-shadow: 0px 1px 2px $text-shadow-color;
 }
 
@@ -39,7 +41,7 @@ h2 {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 0.2em;
-  color: $font-color-medium;
+  color: $heading-color;
 }
 
 h3 {
@@ -53,14 +55,14 @@ p {
 a {
   text-decoration: none;
   transition: color 0.3s ease;
-  color: $link-color;
+  color: $font-color;
 
   &:hover {
     color: $link-hovered-color;
   }
 
   &:active {
-    color: $link-color;
+    color: $font-color;
   }
 }
 

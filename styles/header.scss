@@ -10,10 +10,10 @@ header {
   align-items: center;
   z-index: 5;
 
-  background-color: $color-white;
+  background-color: $white;
 
   font-weight: bold;
-  color: $link-color;
+  color: $font-color;
   box-shadow: 3px 0px 6px $text-shadow-color;
 
   .brand {
@@ -23,10 +23,10 @@ header {
     a {
       display: flex;
       align-items: center;
-      color: $link-color;
+      color: $font-color;
 
       &:hover {
-        color: $link-color;
+        color: $font-color;
         text-shadow: none;
       }
 
@@ -41,7 +41,7 @@ header {
         font-size: 1.375rem;
         font-weight: 500;
         letter-spacing: 0.05em;
-        color: $link-color;
+        color: $font-color;
         text-shadow: 0px 0px 1px $text-shadow-color;
       }
     }
@@ -68,7 +68,7 @@ header {
       left: 0;
 
       border-radius: 3px;
-      background-color: $font-color-dark;
+      background-color: $font-color;
 
       transition: 0.25s ease-in-out;
 
@@ -122,10 +122,10 @@ header {
     justify-content: space-around;
     align-items: center;
 
-    border-top: 1px solid lightgray;
+    border-top: 1px solid $grey;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    background: $color-white;
+    background: $white;
     font-size: 1.25rem;
 
     .navbar-item {

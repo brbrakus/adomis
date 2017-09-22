@@ -8,7 +8,7 @@
   flex-flow: column nowrap;
   align-items: center;
 
-  background-color: $bg-color;
+  background-color: $bg-color-accent;
 
   .equipment-header {
     display: flex;
@@ -39,9 +39,9 @@
       background-position: center;
       background-position-y: 80px;
       background-repeat: no-repeat;
-      background-color: $color-white;
+      background-color: $white;
 
-      color: $link-color;
+      color: $font-color;
       border-radius: 5px;
       box-shadow: inset 0px 0px 20px 20px $text-shadow-color;
 
@@ -88,7 +88,7 @@
       &:hover {
         background-image: none;
         opacity: 1;
-        box-shadow: inset 0px 0px 20px 10px $color-white;
+        box-shadow: inset 0px 0px 20px 10px $white;
         transition: box-shadow 0.2s ease-in-out;
 
         .equipment-info {
