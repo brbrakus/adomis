@@ -145,15 +145,15 @@ header {
   header {
     .navbar-items {
       display: flex;
-      flex-flow: row nowrap;
-      height: auto;
       width: 40%;
       width: 40vw;
+      height: auto;
 
       margin-right: 7%;
       margin-right: 7vw;
       padding: 0;
 
+      flex-flow: row nowrap;
       position: relative;
       top: auto;
 
