@@ -2,76 +2,43 @@ footer {
   display: flex;
   width: 100%;
   width: 100vw;
-  height: 65px;
 
-  flex-direction: row;
-  justify-content: space-between;
+  height: 150px;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
   align-items: center;
 
-  background-color: $font-color;
+  background-color: $bg-color-dark;
   color: $font-color-bright;
-  opacity: 0.9;
 
   h4 {
     display: flex;
-    padding-left: 4%;
-    padding-left: 4vw;
+    padding: 20px;
     align-content: center;
-    flex-basis: 25%;
-    flex-basis: 25vw;
 
     font-size: 15px;
     font-weight: 100;
   }
 
-  .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
-
-    .location {
-      display: flex;
-
-      p {
-        opacity: 0;
-        transition: opacity 400ms ease-in-out;
-      }
-
-      i {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-
-      &:hover {
-        i {
-          color: $link-hovered-color;
-        }
-        p {
-          opacity: 1;
-          transition: opacity 400ms ease-in-out;
-        }
-      }
-    }
-  }
-
   .social-icons {
     display: flex;
-    margin-right: 7%;
-    margin-right: 7vw;
-    justify-content: flex-end;
-    flex-flow: row nowrap;
-    flex-basis: 17%;
-    flex-basis: 17vw;
+    width: 30%;
+    width: 30vw;
 
-    font-size: 18px;
+    margin: 0px;
+    padding: 20px;
+
+    justify-content: space-around;
+    flex-flow: row nowrap;
+
+    font-size: 26px;
 
     .social-icon {
       display: inline-flex;
-      width: 25px;
+      width: 30px;
+      margin: 0px;
       justify-content: center;
       align-items: center;
-      margin-right: 6px;
     }
 
     a {
@@ -83,6 +50,29 @@ footer {
 
       &:hover {
         color: $link-hovered-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  footer {
+    height: 55px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h4 {
+      padding-left: 4%;
+      padding-left: 4vw;
+    }
+
+    .social-icons {
+      margin-right: 4%;
+      margin-right: 4vw;
+      justify-content: flex-end;
+
+      .social-icon {
+        margin-right: 20px;
       }
     }
   }
