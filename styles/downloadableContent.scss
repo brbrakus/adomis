@@ -11,26 +11,10 @@
   color: $font-color-bright;
 
   background-color: $bg-color-dark;
-  background-image: url(assets/images/telescope.svg);
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
-  background-position: -5% 5%;
-
-  h1 {
-    padding-top: 40px;
-    letter-spacing: 0.1em;
-    text-transform: none;
-    color: $font-color-bright;
-
-    &:hover {
-      color: $link-hovered-color;
-    }
-  }
 
   h2 {
-    width: 60%;
-    width: 60vw;
-    font-weight: 200;
+    margin-bottom: 100px;
+    font-size: 1.5rem;
     color: $font-color-bright;
   }
 
@@ -43,7 +27,6 @@
     display: flex;
     width: 40%;
     width: 40vw;
-    margin-top: 150px;
 
     flex-flow: row nowrap;
     justify-content: space-between;

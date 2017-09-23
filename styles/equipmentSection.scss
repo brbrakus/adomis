@@ -16,6 +16,10 @@
     width: 100vw;
     margin-bottom: 100px;
     flex-flow: column nowrap;
+
+    h1 {
+      color: $font-color-bright;
+    }
   }
 
   .equipment-cards {
@@ -43,7 +47,7 @@
 
       color: $font-color;
       border-radius: 5px;
-      box-shadow: inset 0px 0px 20px 20px $text-shadow-color;
+      box-shadow: 0 7px 14px $card-shadow-color, 0 4px 7px $card-shadow-color;
 
       h2 {
         padding-top: 10px;
@@ -88,7 +92,7 @@
       &:hover {
         background-image: none;
         opacity: 1;
-        box-shadow: inset 0px 0px 20px 10px $white;
+        box-shadow: 0 15px 38px $card-shadow-color, 0 10px 20px $card-shadow-color;
         transition: box-shadow 0.2s ease-in-out;
 
         .equipment-info {
