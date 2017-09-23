@@ -3,8 +3,8 @@
   width: 100%;
   width: 100vw;
 
-  padding-top: 70px;
-  padding-bottom: 150px;
+  padding-top: $spc-l;
+  padding-bottom: $spc-xl;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -21,7 +21,7 @@
   }
 
   p {
-    padding-top: 10px;
+    padding-top: $spc-s;
   }
 
   .about-us-cards {

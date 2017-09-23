@@ -2,8 +2,8 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  padding-top: 100px;
-  padding-bottom: 150px;
+  padding-top: $spc-l;
+  padding-bottom: $spc-xl;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -12,8 +12,6 @@
 
   .equipment-header {
     display: flex;
-    width: 100%;
-    width: 100vw;
     margin-bottom: 100px;
     flex-flow: column nowrap;
 
@@ -24,8 +22,8 @@
 
   .equipment-cards {
     display: flex;
-    width: 60%;
-    width: 60vw;
+    width: 75%;
+    width: 75vw;
 
     flex-flow: row wrap;
     justify-content: space-around;
@@ -35,7 +33,7 @@
       display: flex;
       width: 340px;
       height: 380px;
-      padding: 20px;
+      padding: $spc-s;
       margin-bottom: 30px;
       flex-flow: column nowrap;
 
@@ -71,7 +69,7 @@
       .equipment-info {
         display: flex;
         height: 100%;
-        padding-top: 20px;
+        padding-top: $spc-s;
 
         flex-flow: column wrap;
         justify-content: space-around;

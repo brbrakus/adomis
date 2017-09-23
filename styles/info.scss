@@ -3,83 +3,67 @@
   width: 100%;
   width: 100vw;
 
-  padding-top: 120px;
-  padding-bottom: 150px;
+  padding-top: $spc-l;
+  padding-bottom: $spc-xl;
 
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
+  justify-content: center;
   color: $heading-color;
 
   h2 {
-    width: 50%;
-    width: 50vw;
-    margin-bottom: 30px;
-
-    @media (max-width: 1160px) {
-      width: 80%;
-      width: 80vw;
-    }
+    font-size: 1.5 em;
+    width: 40%;
+    width: 40vw;
   }
 
   .info-cards {
     display: flex;
-    width: 60%;
-    width: 60vw;
+    width: 30%;
+    width: 30vw;
 
     margin-top: 60px;
 
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
 
-    @media (max-width: 1160px) {
-      flex-flow: column nowrap;
-      align-items: center;
-    }
-
     .info-card {
-      width: 50%;
-      padding: 20px;
-      margin: 20px;
+      display: inline-flex;
+      width: 314px;
+      padding: $spc-s;
 
-      border-radius: 10px 10px;
-      box-shadow: 3px 3px 10px $card-shadow-color;
-
-      @media (max-width: 1160px) {
-        display: flex;
-       flex-flow: row nowrap;
-       align-items: center;
-      }
-
-      &:hover {
-        box-shadow: 3px 3px 10px $heading-color;
-      }
+      flex-flow: row nowrap;
+      align-items: center;
 
       a {
-        color: $heading-color;
+        color: $link-hovered-color;
 
         &:hover {
+          color: $heading-color;
+        }
+
+        &:visited {
           color: $link-hovered-color;
         }
       }
 
       .location-icons {
         display: inline-flex;
+        width: 57px;
+        height: 57px;
 
-        margin-bottom: 15px;
+        margin-right: 25px;
 
         justify-content: center;
         align-items: center;
 
-        text-align: center;
-        font-size: 52px;
+        font-size: 26px;
         color: $link-hovered-color;
-
-        @media (max-width: 1160px) {
-          margin-bottom: 0px;
-          margin-right: 25px;
-        }
+        border-radius: 100%;
+        box-shadow: 3px 3px 6px $text-shadow-color;
       }
     }
   }
