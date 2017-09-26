@@ -8,17 +8,18 @@
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
-  color: $font-color-bright;
 
+  color: $font-color-bright;
   background-color: $bg-color-dark;
 
   h2 {
-    margin-bottom: 100px;
+    margin-bottom: $spc-l;
     font-size: 1.5rem;
     color: $font-color-bright;
   }
 
   h3 {
+    margin-bottom: $spc-m;
     font-weight: 100;
     color: $font-color-bright;
   }
@@ -28,11 +29,11 @@
     width: 40%;
     width: 40vw;
 
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
 
     .downloadable-icon {
-      font-size: 100px;
+      font-size: 6.25rem;
       color: $heading-color;
 
       &:hover {
@@ -41,3 +42,11 @@
     }
   }
 }
+
+@media screen and (min-width: 1025px) {
+  .downloadable-content{
+    .downloadable-icons{
+      flex-flow: row nowrap;
+    }
+  }
+    }

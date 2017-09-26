@@ -14,6 +14,7 @@ $text-shadow-color: rgba(0, 0, 0, 0.2);
 $card-shadow-color: rgba(0, 0, 0, 0.30);
 
 $spc-s: 20px;
+$spc-m: 50px;
 $spc-l: 100px;
 $spc-xl: 150px;
 
@@ -32,11 +33,13 @@ html,
 body {
   width: 100%;
   height: 100%;
+
+  font-size: 1rem;
 }
 
 h1 {
   text-align: center;
-  font-size: 38px;
+  font-size: 2.375rem;
   font-weight: 400;
   color: $heading-color;
   text-shadow: 0px 1px 2px $text-shadow-color;
@@ -44,17 +47,17 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: 0.2em;
   color: $heading-color;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 a {
