@@ -3,8 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding-top: $spc-l;
-  padding-bottom: $spc-xl;
+  padding: $spc-l 0 $spc-xl 0;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -13,10 +12,10 @@
 
   .about-us-header {
     display: flex;
-    width: 75px;
+    width: 75%;
     width: 75vw;
 
-    margin-bottom: 100px;
+    margin-bottom: $spc-l;
     flex-flow: column wrap;
   }
 
@@ -31,14 +30,14 @@
 
     flex-flow: column wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
     .about-us-card {
       width: 75%;
       width: 75vw;
-      max-width: 550px;
+      max-width: 34.38rem;
 
-      margin: 0px;
+      margin: 0;
       margin-bottom: $spc-l;
 
       flex-flow: column wrap;
@@ -54,10 +53,11 @@
         justify-content: flex-start;
         align-items: center;
 
-        .about-us-icon {
+        .about-us-icon,
+        .about-us-icon-telescope {
           display: inline-flex;
-          width: 57px;
-          height: 57px;
+          width: $icon-dim;
+          height: $icon-dim;
 
           margin: 0 $spc-s 0 $spc-s;
 
@@ -68,34 +68,11 @@
           font-size: 1.625rem;
           color: $link-hovered-color;
           border-radius: 100%;
-          box-shadow: 3px 3px 6px $text-shadow-color;
-
-          i {
-            margin-left: 4px;
-          }
+          box-shadow: $icon-shadow $text-shadow-color;
         }
 
         .about-us-icon-telescope {
-          display: inline-flex;
-          width: 57px;
-          height: 57px;
-
-          margin-right: $spc-s;
-          margin-bottom: $spc-s;
-
-          justify-content: center;
-          align-items: center;
-
-          text-align: center;
           font-size: 2.125rem;
-          color: $link-hovered-color;
-
-          border-radius: 100%;
-          box-shadow: 3px 3px 6px $text-shadow-color;
-
-          i {
-            margin-left: 4px;
-          }
         }
       }
     }
@@ -113,13 +90,13 @@
     .about-us-cards {
       width: 65%;
       width: 65vw;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
 
       .about-us-card {
         width: 34%;
         width: 24vw;
-        max-width: 344px;
-        margin: 40px;
+        max-width: 21.5rem;
+        margin: $spc-m;
       }
     }
   }

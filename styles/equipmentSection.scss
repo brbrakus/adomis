@@ -2,8 +2,8 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  padding-top: $spc-l;
-  padding-bottom: $spc-xl;
+
+  padding: $spc-l 0 $spc-xl 0;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -31,10 +31,10 @@
 
     .equipment-card {
       display: flex;
-      width: 340px;
-      height: 380px;
+      width: 21.25rem;
+      height: 23.75rem;
       padding: $spc-s;
-      margin-bottom: 30px;
+      margin-bottom: $spc-m;
       flex-flow: column nowrap;
 
       background-size: 280px;
@@ -50,7 +50,7 @@
       h2 {
         padding-top: 10px;
         text-align: center;
-        letter-spacing: 0em;
+        letter-spacing: 0;
       }
 
       &:nth-of-type(1) {
@@ -90,7 +90,8 @@
       &:hover {
         background-image: none;
         opacity: 1;
-        box-shadow: 0 15px 38px $card-shadow-color, 0 10px 20px $card-shadow-color;
+        box-shadow: 0 15px 38px $card-shadow-color,
+          0 10px 20px $card-shadow-color;
         transition: box-shadow 0.2s ease-in-out;
 
         .equipment-info {

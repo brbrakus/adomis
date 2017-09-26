@@ -3,13 +3,13 @@
   width: 100%;
   width: 100vw;
 
-  padding-top: $spc-l;
-  padding-bottom: $spc-xl;
+  padding: $spc-l 0 $spc-xl 0;
 
   flex-flow: column nowrap;
   align-items: center;
-  text-align: center;
   justify-content: center;
+
+  text-align: center;
   color: $heading-color;
 
   h2 {
@@ -33,7 +33,7 @@
 
     .info-card {
       display: inline-flex;
-      width: 314px;
+      width: 19.63rem;
       padding: $spc-s;
 
       flex-flow: row nowrap;
@@ -53,8 +53,8 @@
 
       .location-icons {
         display: inline-flex;
-        width: 57px;
-        height: 57px;
+        width: $icon-dim;
+        height: $icon-dim;
 
         margin-right: $spc-s;
 
@@ -64,7 +64,7 @@
         font-size: 1.625rem;
         color: $link-hovered-color;
         border-radius: 100%;
-        box-shadow: 3px 3px 6px $text-shadow-color;
+        box-shadow: $icon-shadow $text-shadow-color;
       }
     }
   }

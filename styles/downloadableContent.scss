@@ -2,8 +2,8 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  padding-top: $spc-l;
-  padding-bottom: $spc-xl;
+
+  padding: $spc-l 0 $spc-xl 0;
 
   flex-flow: column nowrap;
   align-items: center;

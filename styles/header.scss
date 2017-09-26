@@ -2,7 +2,7 @@ header {
   display: flex;
   width: 100%;
   width: 100vw;
-  height: 70px;
+  height: 4.375rem;
 
   position: fixed;
   flex-direction: row;
@@ -109,7 +109,7 @@ header {
   .navbar-items {
     display: none;
     flex-flow: column nowrap;
-    height: 215px;
+    height: 13.44rem;
     width: 100%;
     width: 100vw;
 
@@ -129,6 +129,7 @@ header {
     .navbar-item {
       display: inline;
       margin-left: 6px;
+      margin-left: 6vw;
 
       font-weight: 500;
     }
@@ -156,7 +157,7 @@ header {
       top: auto;
 
       font-size: 1rem;
-      border: 0px;
+      border: 0;
 
       .navbar-item {
         margin: 0;

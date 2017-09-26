@@ -10,13 +10,17 @@ $card-hover-color: $white;
 $heading-color: #0760b7;
 $bg-color-accent: $heading-color;
 $bg-color-dark: $font-color;
+
 $text-shadow-color: rgba(0, 0, 0, 0.2);
 $card-shadow-color: rgba(0, 0, 0, 0.3);
 
-$spc-s: 20px;
-$spc-m: 50px;
-$spc-l: 100px;
-$spc-xl: 150px;
+$icon-shadow: 3px 3px 6px;
+$icon-dim: 57px;
+
+$spc-s: 1.25rem;
+$spc-m: 3.125rem;
+$spc-l: 6.25rem;
+$spc-xl: 9.375rem;
 
 *,
 html,
