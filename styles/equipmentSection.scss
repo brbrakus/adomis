@@ -90,8 +90,7 @@
       &:hover {
         background-image: none;
         opacity: 1;
-        box-shadow: 0 15px 38px $card-shadow-color,
-          0 10px 20px $card-shadow-color;
+        box-shadow: 0 15px 38px $card-shadow-color, 0 10px 20px $card-shadow-color;
         transition: box-shadow 0.2s ease-in-out;
 
         .equipment-info {
