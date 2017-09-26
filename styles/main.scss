@@ -11,7 +11,7 @@ $heading-color: #0760b7;
 $bg-color-accent: $heading-color;
 $bg-color-dark: $font-color;
 $text-shadow-color: rgba(0, 0, 0, 0.2);
-$card-shadow-color: rgba(0, 0, 0, 0.30);
+$card-shadow-color: rgba(0, 0, 0, 0.3);
 
 $spc-s: 20px;
 $spc-m: 50px;
@@ -26,7 +26,7 @@ body {
 
   box-sizing: border-box;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 html,
@@ -89,10 +89,10 @@ ul {
   visibility: hidden;
 }
 
-@import 'header';
-@import 'mainSlider';
-@import 'aboutUs';
-@import 'equipmentSection';
-@import 'downloadableContent';
-@import 'info';
-@import 'footer';
+@import "header";
+@import "mainSlider";
+@import "aboutUs";
+@import "equipmentSection";
+@import "downloadableContent";
+@import "info";
+@import "footer";
