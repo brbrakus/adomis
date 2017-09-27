@@ -13,10 +13,10 @@ footer {
 
   h4 {
     display: flex;
-    padding: $spc-s;
+    padding-top: 1.875rem;
     align-content: center;
 
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
     font-weight: 100;
   }
 
@@ -24,9 +24,7 @@ footer {
     display: flex;
     width: 30%;
     width: 30vw;
-
-    margin: 0px;
-    padding: $spc-s;
+    margin: 0;
 
     justify-content: space-around;
     flex-flow: row nowrap;
@@ -36,7 +34,9 @@ footer {
     .social-icon {
       display: inline-flex;
       width: 30px;
-      margin: 0px;
+      margin: 0;
+      padding: 0 $spc-s 0 $spc-s;
+
       justify-content: center;
       align-items: center;
     }
@@ -45,6 +45,7 @@ footer {
       display: flex;
       width: 100%;
       width: 100vw;
+
       justify-content: center;
       color: $font-color-bright;
 
@@ -60,16 +61,16 @@ footer {
     height: 3.438rem;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     h4 {
-      padding-left: 4%;
-      padding-left: 4vw;
+      padding: 0;
+      margin-left: $spc-m;
     }
 
     .social-icons {
-      margin-right: 4%;
-      margin-right: 4vw;
       justify-content: flex-end;
+      margin-right: $spc-m;
 
       .social-icon {
         margin-right: $spc-s;

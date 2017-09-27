@@ -22,6 +22,8 @@ $spc-m: 3.125rem;
 $spc-l: 6.25rem;
 $spc-xl: 9.375rem;
 
+$section-spc: $spc-l 0 $spc-xl 0;
+
 *,
 html,
 body {
@@ -39,6 +41,7 @@ body {
   height: 100%;
 
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 h1 {

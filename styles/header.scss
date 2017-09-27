@@ -17,8 +17,7 @@ header {
   box-shadow: 3px 0px 6px $text-shadow-color;
 
   .brand {
-    margin-left: 4%;
-    margin-left: 4vw;
+    margin-left: $spc-m;
 
     a {
       display: flex;
@@ -41,6 +40,7 @@ header {
         font-size: 1.375rem;
         font-weight: 500;
         letter-spacing: 0.05em;
+
         color: $font-color;
         text-shadow: 0px 0px 1px $text-shadow-color;
       }
@@ -55,7 +55,7 @@ header {
     flex-flow: column nowrap;
     justify-content: space-around;
     position: absolute;
-    right: 28px;
+    right: $spc-m;
 
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -148,8 +148,7 @@ header {
       width: 40vw;
       height: auto;
 
-      margin-right: 4%;
-      margin-right: 4vw;
+      margin-right: $spc-m;
       padding: 0;
 
       flex-flow: row nowrap;
