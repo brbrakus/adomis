@@ -3,81 +3,100 @@
   width: 100%;
   width: 100vw;
 
-  padding-top: 100px;
-  margin-bottom: 100px;
+  padding: $section-spc;
 
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
-  color: $font-color-dark;
-
-  background-image: url(assets/images/astronaut.svg);
-  background-size: 300px 300px;
-  background-position: 100% 20%;
-  background-repeat: no-repeat;
+  color: $font-color;
 
   .about-us-header {
     display: flex;
-    width: 100%;
-    width: 100vw;
-    margin-bottom: 60px;
-    flex-flow: column nowrap;
+    width: 75%;
+    width: 75vw;
+
+    margin-bottom: $spc-l;
+    flex-flow: column wrap;
   }
 
   p {
-    padding-top: 10px;
+    padding-top: $spc-s;
   }
 
   .about-us-cards {
     display: flex;
-    width: 65%;
-    width: 65vw;
+    width: 75%;
+    width: 75vw;
 
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
-    text-align: left;
+    align-items: flex-start;
 
     .about-us-card {
-      width: 34%;
-      width: 24vw;
-      max-width: 344px;
-      margin: 40px;
+      width: 75%;
+      width: 75vw;
+      max-width: 34.38rem;
 
-      .about-us-icon {
-        display: inline-flex;
-        width: 57px;
-        height: 57px;
+      margin: 0;
+      margin-bottom: $spc-l;
 
-        margin-bottom: 20px;
-        padding: 12px;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      text-align: left;
 
-        justify-content: center;
+      .about-us-card-header {
+        display: flex;
+        width: 100%;
+        width: 100vw;
+
+        flex-flow: row nowrap;
+        justify-content: flex-start;
         align-items: center;
 
-        text-align: center;
-        font-size: 26px;
-        color: $link-hovered-color;
-        border-radius: 100%;
-        box-shadow: 3px 3px 6px $text-shadow-color;
+        .about-us-icon,
+        .about-us-icon-telescope {
+          display: inline-flex;
+          width: $icon-dim;
+          height: $icon-dim;
+
+          margin: 0 $spc-s 0 $spc-s;
+
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          font-size: 1.625rem;
+          color: $link-hovered-color;
+          border-radius: 100%;
+          box-shadow: $icon-shadow $text-shadow-color;
+        }
+
+        .about-us-icon-telescope {
+          font-size: 2.125rem;
+        }
       }
+    }
+  }
+}
 
-      .about-us-icon-telescope {
-        display: inline-flex;
-        width: 57px;
-        height: 57px;
+@media screen and (min-width: 1025px) {
+  .about-us {
+    .about-us-header {
+      width: 100%;
+      width: 100vw;
+      margin-bottom: $spc-m;
+    }
 
-        margin-bottom: 20px;
-        padding: 12px;
+    .about-us-cards {
+      width: 65%;
+      width: 65vw;
+      flex-flow: row nowrap;
 
-        justify-content: center;
-        align-items: center;
-
-        text-align: center;
-        font-size: 34px;
-        color: $link-hovered-color;
-
-        border-radius: 100%;
-        box-shadow: 3px 3px 6px $text-shadow-color;
+      .about-us-card {
+        width: 34%;
+        width: 24vw;
+        max-width: 21.5rem;
+        margin: $spc-m;
       }
     }
   }

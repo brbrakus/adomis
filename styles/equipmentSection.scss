@@ -2,26 +2,28 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  padding-top: 100px;
-  padding-bottom: 100px;
+
+  padding: $section-spc;
 
   flex-flow: column nowrap;
   align-items: center;
 
-  background-color: $bg-color;
+  background-color: $bg-color-accent;
 
   .equipment-header {
     display: flex;
-    width: 100%;
-    width: 100vw;
-    margin-bottom: 100px;
+    margin-bottom: $spc-l;
     flex-flow: column nowrap;
+
+    h1 {
+      color: $font-color-bright;
+    }
   }
 
   .equipment-cards {
     display: flex;
-    width: 60%;
-    width: 60vw;
+    width: 75%;
+    width: 75vw;
 
     flex-flow: row wrap;
     justify-content: space-around;
@@ -29,26 +31,26 @@
 
     .equipment-card {
       display: flex;
-      width: 340px;
-      height: 380px;
-      padding: 20px;
-      margin-bottom: 30px;
+      width: 21.25rem;
+      height: 23.75rem;
+      padding: $spc-s;
+      margin-bottom: $spc-m;
       flex-flow: column nowrap;
 
       background-size: 280px;
       background-position: center;
       background-position-y: 80px;
       background-repeat: no-repeat;
-      background-color: $color-white;
+      background-color: $white;
 
-      color: $link-color;
+      color: $font-color;
       border-radius: 5px;
-      box-shadow: inset 0px 0px 20px 20px $text-shadow-color;
+      box-shadow: 0 7px 14px $card-shadow-color, 0 4px 7px $card-shadow-color;
 
       h2 {
         padding-top: 10px;
         text-align: center;
-        letter-spacing: 0em;
+        letter-spacing: 0;
       }
 
       &:nth-of-type(1) {
@@ -67,12 +69,12 @@
       .equipment-info {
         display: flex;
         height: 100%;
-        padding-top: 20px;
+        padding-top: $spc-s;
 
         flex-flow: column wrap;
         justify-content: space-around;
 
-        line-height: 20px;
+        line-height: $spc-s;
         opacity: 0;
         transition: none;
 
@@ -88,7 +90,8 @@
       &:hover {
         background-image: none;
         opacity: 1;
-        box-shadow: inset 0px 0px 20px 10px $color-white;
+        box-shadow: 0 15px 38px $card-shadow-color,
+          0 10px 20px $card-shadow-color;
         transition: box-shadow 0.2s ease-in-out;
 
         .equipment-info {

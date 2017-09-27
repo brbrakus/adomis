@@ -1,0 +1,77 @@
+.info {
+  display: flex;
+  width: 100%;
+  width: 100vw;
+
+  padding: $spc-l 0 $spc-xl 0;
+
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: $heading-color;
+
+  h2 {
+    width: 60%;
+    width: 60vw;
+    padding-bottom: $spc-m;
+    font-size: 1.5 em;
+  }
+
+  .info-cards {
+    display: flex;
+    width: 30%;
+    width: 30vw;
+
+    margin-top: $spc-m;
+
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    .info-card {
+      display: inline-flex;
+      width: 19.63rem;
+      padding: $spc-s;
+
+      flex-flow: row nowrap;
+      align-items: center;
+
+      a {
+        color: $link-hovered-color;
+
+        &:hover {
+          color: $heading-color;
+        }
+
+        &:visited {
+          color: $link-hovered-color;
+        }
+      }
+
+      .location-icons {
+        display: inline-flex;
+        width: $icon-dim;
+        height: $icon-dim;
+
+        margin-right: $spc-s;
+
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.625rem;
+        color: $link-hovered-color;
+        border-radius: 100%;
+        box-shadow: $icon-shadow $text-shadow-color;
+      }
+    }
+  }
+}
+
+.members-image {
+  display: block;
+  width: 100%;
+  width: 100vw;
+}

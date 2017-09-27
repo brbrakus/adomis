@@ -2,7 +2,7 @@ header {
   display: flex;
   width: 100%;
   width: 100vw;
-  height: 70px;
+  height: 4.375rem;
 
   position: fixed;
   flex-direction: row;
@@ -10,23 +10,22 @@ header {
   align-items: center;
   z-index: 5;
 
-  background-color: $color-white;
+  background-color: $white;
 
   font-weight: bold;
-  color: $link-color;
+  color: $font-color;
   box-shadow: 3px 0px 6px $text-shadow-color;
 
   .brand {
-    margin-left: 4%;
-    margin-left: 4vw;
+    margin-left: $spc-m;
 
     a {
       display: flex;
       align-items: center;
-      color: $link-color;
+      color: $font-color;
 
       &:hover {
-        color: $link-color;
+        color: $font-color;
         text-shadow: none;
       }
 
@@ -41,7 +40,8 @@ header {
         font-size: 1.375rem;
         font-weight: 500;
         letter-spacing: 0.05em;
-        color: $link-color;
+
+        color: $font-color;
         text-shadow: 0px 0px 1px $text-shadow-color;
       }
     }
@@ -55,7 +55,7 @@ header {
     flex-flow: column nowrap;
     justify-content: space-around;
     position: absolute;
-    right: 28px;
+    right: $spc-m;
 
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -68,7 +68,7 @@ header {
       left: 0;
 
       border-radius: 3px;
-      background-color: $font-color-dark;
+      background-color: $font-color;
 
       transition: 0.25s ease-in-out;
 
@@ -109,28 +109,27 @@ header {
   .navbar-items {
     display: none;
     flex-flow: column nowrap;
-    height: 215px;
+    height: 13.44rem;
     width: 100%;
     width: 100vw;
 
-    padding-bottom: 25px;
-    padding-top: 10px;
-
+    padding: $spc-s;
     position: absolute;
     top: 69px;
 
     justify-content: space-around;
     align-items: center;
 
-    border-top: 1px solid lightgray;
+    border-top: 1px solid $grey;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    background: $color-white;
+    background: $white;
     font-size: 1.25rem;
 
     .navbar-item {
       display: inline;
       margin-left: 6px;
+      margin-left: 6vw;
 
       font-weight: 500;
     }
@@ -145,20 +144,19 @@ header {
   header {
     .navbar-items {
       display: flex;
-      flex-flow: row nowrap;
-      height: auto;
       width: 40%;
       width: 40vw;
+      height: auto;
 
-      margin-right: 7%;
-      margin-right: 7vw;
+      margin-right: $spc-m;
       padding: 0;
 
+      flex-flow: row nowrap;
       position: relative;
       top: auto;
 
       font-size: 1rem;
-      border: 0px;
+      border: 0;
 
       .navbar-item {
         margin: 0;

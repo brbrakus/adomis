@@ -2,87 +2,78 @@ footer {
   display: flex;
   width: 100%;
   width: 100vw;
-  height: 65px;
 
-  flex-direction: row;
-  justify-content: space-between;
+  height: $spc-xl;
+  flex-flow: column-reverse nowrap;
+  justify-content: center;
   align-items: center;
 
-  background-color: $font-color-dark;
+  background-color: $bg-color-dark;
   color: $font-color-bright;
-  opacity: 0.9;
 
   h4 {
     display: flex;
-    padding-left: 4%;
-    padding-left: 4vw;
+    padding-top: 1.875rem;
     align-content: center;
-    flex-basis: 25%;
-    flex-basis: 25vw;
 
-    font-size: 15px;
+    font-size: 0.8125rem;
     font-weight: 100;
-  }
-
-  .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
-
-    .location {
-      display: flex;
-
-      p {
-        opacity: 0;
-        transition: opacity 400ms ease-in-out;
-      }
-
-      i {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-
-      &:hover {
-        i {
-          color: $link-hovered-color;
-        }
-        p {
-          opacity: 1;
-          transition: opacity 400ms ease-in-out;
-        }
-      }
-    }
   }
 
   .social-icons {
     display: flex;
-    margin-right: 7%;
-    margin-right: 7vw;
-    justify-content: flex-end;
-    flex-flow: row nowrap;
-    flex-basis: 17%;
-    flex-basis: 17vw;
+    width: 30%;
+    width: 30vw;
+    margin: 0;
 
-    font-size: 18px;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+
+    font-size: 1.625rem;
 
     .social-icon {
       display: inline-flex;
-      width: 25px;
+      width: 30px;
+      margin: 0;
+      padding: 0 $spc-s 0 $spc-s;
+
       justify-content: center;
       align-items: center;
-      margin-right: 6px;
     }
 
     a {
       display: flex;
       width: 100%;
       width: 100vw;
+
       justify-content: center;
       color: $font-color-bright;
 
       &:hover {
         color: $link-hovered-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  footer {
+    height: 3.438rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      padding: 0;
+      margin-left: $spc-m;
+    }
+
+    .social-icons {
+      justify-content: flex-end;
+      margin-right: $spc-m;
+
+      .social-icon {
+        margin-right: $spc-s;
       }
     }
   }

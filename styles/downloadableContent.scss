@@ -2,39 +2,24 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  padding-top: 150px;
-  padding-bottom: 100px;
+
+  padding: $section-spc;
 
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
+
   color: $font-color-bright;
-
-  background-color: $bg-color;
-  background-image: url(assets/images/telescope.svg);
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
-  background-position: -5% 5%;
-
-  h1 {
-    padding-top: 40px;
-    letter-spacing: 0.1em;
-    text-transform: none;
-    color: $font-color-bright;
-
-    &:hover {
-      color: $link-hovered-color;
-    }
-  }
+  background-color: $bg-color-dark;
 
   h2 {
-    width: 60%;
-    width: 60vw;
-    font-weight: 200;
+    margin-bottom: $spc-l;
+    font-size: 1.5rem;
     color: $font-color-bright;
   }
 
   h3 {
+    margin-bottom: $spc-m;
     font-weight: 100;
     color: $font-color-bright;
   }
@@ -43,18 +28,25 @@
     display: flex;
     width: 40%;
     width: 40vw;
-    margin-top: 150px;
 
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
 
     .downloadable-icon {
-      font-size: 100px;
-      color: $font-color-medium;
+      font-size: 6.25rem;
+      color: $heading-color;
 
       &:hover {
         color: $link-hovered-color;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .downloadable-content {
+    .downloadable-icons {
+      flex-flow: row nowrap;
     }
   }
 }
