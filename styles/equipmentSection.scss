@@ -34,7 +34,6 @@
       width: 21.25rem;
       height: 23.75rem;
       padding: $spc-s;
-      margin-bottom: $spc-m;
       flex-flow: column nowrap;
 
       background-size: 280px;
@@ -47,7 +46,7 @@
       border-radius: 5px;
       box-shadow: 0 7px 14px $card-shadow-color, 0 4px 7px $card-shadow-color;
 
-      h2 {
+      h3 {
         padding-top: 10px;
         text-align: center;
         letter-spacing: 0;
