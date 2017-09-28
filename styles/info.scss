@@ -19,20 +19,20 @@
 
   .info-body {
     display: flex;
-    width: 75%;
-    width: 75vw;
+    width: 100%;
+    width: 100vw;
 
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
 
     iframe {
-      width: 550px;
-      height: 400px;
+      width: 100%;
+      height: 300px;
       border: 0;
     }
 
-    .info-cards {
+    .info-items {
       display: flex;
       margin-top: $spc-m;
 
@@ -40,7 +40,7 @@
       justify-content: space-between;
       align-items: center;
 
-      .info-card {
+      .info-item {
         display: inline-flex;
         width: 18.75rem;
         padding: $spc-s;
@@ -86,14 +86,21 @@
 @media screen and (min-width: 1025px) {
   .info {
     .info-body {
+      width: 75%;
+      width: 75vw;
       flex-flow: row nowrap;
       justify-content: center;
       align-items: flex-start;
 
-      .info-cards {
+      .info-items {
         margin: 0 0 0 $spc-m;
 
-        .info-card {
+        iframe {
+          width: 550px;
+          height: 400px;
+        }
+
+        .info-item {
           width: 17.5rem;
           padding: 0 0 $spc-s 0;
         }
