@@ -3,17 +3,16 @@
   width: 100%;
   width: 100vw;
 
-  padding: $section-spc;
+  padding: $spc-l 0 $spc-l 0;
 
   flex-flow: column nowrap;
   align-items: center;
-  text-align: center;
   color: $font-color;
 
   .about-us-header {
     display: flex;
-    width: 75%;
-    width: 75vw;
+    width: 90%;
+    width: 90vw;
 
     margin-bottom: $spc-l;
     flex-flow: column wrap;
@@ -25,16 +24,15 @@
 
   .about-us-cards {
     display: flex;
-    width: 75%;
-    width: 75vw;
+    margin: 0 $spc-m 0 $spc-m;
 
     flex-flow: column wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
 
     .about-us-card {
-      width: 75%;
-      width: 75vw;
+      width: 90px;
+      width: 90vw;
       max-width: 34.38rem;
 
       margin: 0;
@@ -59,7 +57,7 @@
           width: $icon-dim;
           height: $icon-dim;
 
-          margin: 0 $spc-s 0 $spc-s;
+          margin-right: $spc-s;
 
           justify-content: center;
           align-items: center;
@@ -88,15 +86,17 @@
     }
 
     .about-us-cards {
-      width: 65%;
-      width: 65vw;
+      width: 55%;
+      width: 55vw;
+      max-width: 50.13rem;
+      margin: 0;
       flex-flow: row nowrap;
 
       .about-us-card {
         width: 34%;
         width: 24vw;
         max-width: 21.5rem;
-        margin: $spc-m;
+        margin: $spc-m 0 $spc-m 0;;
       }
     }
   }
