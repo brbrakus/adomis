@@ -19,7 +19,7 @@
     flex-flow: column wrap;
 
     h1 {
-      padding-bottom: $spc-s;
+      margin-bottom: $spc-s;
       color: $heading-color;
     }
   }
@@ -33,7 +33,7 @@
     margin: 0 $spc-m 0 $spc-m;
 
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 
     .about-us-card {
@@ -41,7 +41,6 @@
       width: 90vw;
       max-width: 34.38rem;
 
-      margin: 0;
       margin: $spc-s 0 $spc-s 0;
 
       flex-flow: column wrap;
@@ -50,9 +49,6 @@
 
       .about-us-card-header {
         display: flex;
-        width: 100%;
-        width: 100vw;
-
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
@@ -90,19 +86,19 @@
     .about-us-header {
       width: 100%;
       width: 100vw;
+      margin-bottom: $spc-l;
     }
 
     .about-us-cards {
-      width: 55%;
-      width: 55vw;
+      width: 70%;
+      width: 70vw;
       max-width: 50.13rem;
-      margin: 0;
+      margin: $spc-s 0 $spc-s 0;
       flex-flow: row nowrap;
+      justify-content: space-between;
 
       .about-us-card {
-        width: 34%;
-        width: 24vw;
-        max-width: 21.5rem;
+        width: 21.5rem;
         margin: 0 0 $spc-m 0;
       }
     }

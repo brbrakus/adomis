@@ -14,14 +14,8 @@
 
   h3 {
     margin-bottom: $spc-m;
+    color: $font-color-bright;
     font-size: 1.5rem;
-    color: $font-color-bright;
-  }
-
-  h4 {
-    margin-bottom: $spc-s;
-    font-weight: 100;
-    color: $font-color-bright;
   }
 
   .downloadable-icons {
@@ -30,7 +24,13 @@
     width: 90vw;
 
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: center;
+
+    h4 {
+      padding: $spc-s;
+      font-weight: 300;
+      color: $font-color-bright;
+    }
 
     .downloadable-icon {
       font-size: 5.5rem;
@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 600px) {
   .downloadable-content {
     padding: $section-spc;
 
@@ -54,8 +54,10 @@
     .downloadable-icons {
       width: 40%;
       width: 40vw;
+      max-width: 50.13rem;
 
       .downloadable-icon {
+        margin: 0 $spc-m 0 $spc-m;
         font-size: 6.25rem;
       }
     }

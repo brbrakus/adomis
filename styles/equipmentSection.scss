@@ -113,13 +113,14 @@
       margin-bottom: $spc-l;
     }
 
-    .equipment-cards{
-      width: 75%;
-      width: 75vw;
+    .equipment-cards {
+      width: 70%;
+      width: 70vw;
 
       .equipment-card {
         width: 21.25rem;
         height: 23.75rem;
+        margin: $spc-s;
       }
     }
   }
