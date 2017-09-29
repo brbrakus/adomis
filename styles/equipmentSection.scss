@@ -3,7 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding: $section-spc;
+  padding: $section-mobile-spc;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -12,27 +12,30 @@
 
   .equipment-header {
     display: flex;
-    margin-bottom: $spc-l;
+    width: 90%;
+    width: 90vw;
+
+    margin-bottom: $spc-m;
     flex-flow: column nowrap;
 
     h1 {
+      padding-bottom: $spc-s;
       color: $font-color-bright;
     }
   }
 
   .equipment-cards {
     display: flex;
-    width: 75%;
-    width: 75vw;
-
     flex-flow: row wrap;
     justify-content: space-around;
     text-align: left;
 
     .equipment-card {
       display: flex;
-      width: 21.25rem;
-      height: 23.75rem;
+      width: 90%;
+      width: 90vw;
+      height: 400px;
+
       padding: $spc-s;
       flex-flow: column nowrap;
 
@@ -97,6 +100,22 @@
           opacity: 1;
           transition: opacity 0.8s linear;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .equipment-section {
+    padding: $section-spc;
+
+    .equipment-cards{
+      width: 75%;
+      width: 75vw;
+
+      .equipment-card {
+        width: 21.25rem;
+        height: 23.75rem;
       }
     }
   }

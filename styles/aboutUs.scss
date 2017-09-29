@@ -3,10 +3,11 @@
   width: 100%;
   width: 100vw;
 
-  padding: $spc-l 0 $spc-m 0;
+  padding: $spc-m 0 $spc-s 0;
 
   flex-flow: column nowrap;
   align-items: center;
+
   color: $font-color;
 
   .about-us-header {
@@ -14,7 +15,7 @@
     width: 90%;
     width: 90vw;
 
-    margin-bottom: $spc-l;
+    margin-bottom: $spc-m;
     flex-flow: column wrap;
 
     h1 {
@@ -84,10 +85,11 @@
 
 @media screen and (min-width: 1025px) {
   .about-us {
+    padding: $spc-l 0 $spc-m 0;
+
     .about-us-header {
       width: 100%;
       width: 100vw;
-      margin-bottom: $spc-m;
     }
 
     .about-us-cards {
