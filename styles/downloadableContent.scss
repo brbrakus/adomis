@@ -54,7 +54,7 @@
     .downloadable-icons {
       width: 40%;
       width: 40vw;
-      max-width: 50.13rem;
+      max-width: $con-max-width;
 
       .downloadable-icon {
         margin: 0 $spc-m 0 $spc-m;

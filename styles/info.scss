@@ -2,7 +2,6 @@
   display: flex;
   width: 100%;
   width: 100vw;
-
   padding: $section-mobile-spc;
 
   flex-flow: column nowrap;
@@ -34,7 +33,7 @@
       display: flex;
       width: 90%;
       width: 90vw;
-      max-width: 34.38rem;
+      max-width: $con-mob-max-width;
 
       margin: 0 $spc-m 0 $spc-m;
 
@@ -94,30 +93,27 @@
   .info {
     padding: $section-spc;
 
-    h3 {
+    h1 {
       margin-bottom: $spc-l;
     }
 
     .info-body {
       width: 70%;
       width: 70vw;
+      max-width: $con-max-width;
       flex-flow: row nowrap;
-      justify-content: space-between;
       align-items: flex-start;
+      justify-content: space-between;
 
       iframe {
         width: 100%;
-        width: 100vw;
         height: 400px;
-        margin-bottom: 0;
       }
 
       .info-items {
         width: 30%;
-        width: 30vw;
-        max-width: 50.13rem;
-        justify-content: space-between;
-        margin: 0 0 0 $spc-m;
+        margin: 0;
+        padding: 0 0 0 $spc-m;
 
         .info-item {
           width: 17.5rem;

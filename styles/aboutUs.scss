@@ -39,9 +39,9 @@
     .about-us-card {
       width: 90px;
       width: 90vw;
-      max-width: 34.38rem;
+      max-width: $con-mob-max-width;
 
-      margin: $spc-s 0 $spc-s 0;
+      margin: $spc-tb-sm;
 
       flex-flow: column wrap;
       justify-content: space-around;
@@ -92,8 +92,8 @@
     .about-us-cards {
       width: 70%;
       width: 70vw;
-      max-width: 50.13rem;
-      margin: $spc-s 0 $spc-s 0;
+      max-width: $con-max-width;
+      margin: $spc-tb-sm;
       flex-flow: row nowrap;
       justify-content: space-between;
 

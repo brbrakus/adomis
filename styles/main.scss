@@ -17,12 +17,15 @@ $card-shadow-color: rgba(0, 0, 0, 0.3);
 
 $icon-shadow: 3px 3px 6px;
 $icon-dim: 57px;
+$con-max-width: 50.13rem;
+$con-mob-max-width: 34.38rem;
 
 $spc-s: 1.25rem;
 $spc-m: 3.125rem;
 $spc-l: 6.25rem;
 $spc-xl: 9.375rem;
 
+$spc-tb-sm: $spc-s 0 $spc-s 0;
 $section-spc: $spc-l 0 $spc-xl 0;
 $section-mobile-spc: $spc-m 0 $spc-l 0;
 
