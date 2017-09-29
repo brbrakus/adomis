@@ -3,7 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding: $spc-m 0 $spc-s 0;
+  padding: $section-mobile-spc;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -15,7 +15,7 @@
     width: 90%;
     width: 90vw;
 
-    margin-bottom: $spc-m;
+    margin-bottom: $spc-l;
     flex-flow: column wrap;
 
     h1 {
@@ -42,7 +42,7 @@
       max-width: 34.38rem;
 
       margin: 0;
-      margin-bottom: $spc-l;
+      margin-bottom: $spc-m;
 
       flex-flow: column wrap;
       justify-content: space-around;

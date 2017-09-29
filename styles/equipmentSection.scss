@@ -36,6 +36,7 @@
       width: 90vw;
       height: 400px;
 
+      margin-bottom: $spc-s;
       padding: $spc-s;
       flex-flow: column nowrap;
 
@@ -105,7 +106,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 600px) {
   .equipment-section {
     padding: $section-spc;
 
