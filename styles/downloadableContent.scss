@@ -3,7 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding: $section-mobile-spc;
+  padding: $section-mob-spc;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -54,7 +54,7 @@
     .downloadable-icons {
       width: 40%;
       width: 40vw;
-      max-width: $con-max-width;
+      max-width: $content-max-width;
 
       .downloadable-icon {
         margin: 0 $spc-m 0 $spc-m;

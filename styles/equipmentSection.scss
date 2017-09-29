@@ -3,7 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding: $section-mobile-spc;
+  padding: $section-mob-spc;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -35,10 +35,11 @@
       display: flex;
       width: 100%;
       width: 100vw;
-      max-width: $con-mob-max-width;
+      max-width: $content-mob-max-width;
 
       height: 400px;
       height: 60vh;
+      max-height: 450px;
 
       margin-bottom: $spc-s;
       padding: $spc-s;
@@ -121,7 +122,7 @@
     .equipment-cards {
       width: 70%;
       width: 70vw;
-      max-width: $con-max-width;
+      max-width: $content-max-width;
       justify-content: space-between;
 
       .equipment-card {
