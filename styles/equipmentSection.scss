@@ -3,7 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding: $section-spc;
+  padding: $section-mob-spc;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -12,7 +12,10 @@
 
   .equipment-header {
     display: flex;
-    margin-bottom: $spc-l;
+    width: 90%;
+    width: 90vw;
+
+    margin-bottom: $spc-m;
     flex-flow: column nowrap;
 
     h1 {
@@ -22,32 +25,37 @@
 
   .equipment-cards {
     display: flex;
-    width: 75%;
-    width: 75vw;
+    width: 90%;
+    width: 90vw;
 
+    justify-content: center;
     flex-flow: row wrap;
-    justify-content: space-around;
-    text-align: left;
 
     .equipment-card {
       display: flex;
-      width: 21.25rem;
-      height: 23.75rem;
+      width: 100%;
+      width: 100vw;
+      max-width: $content-mob-max-width;
+
+      height: 400px;
+      height: 60vh;
+      max-height: 450px;
+
+      margin-bottom: $spc-s;
       padding: $spc-s;
-      margin-bottom: $spc-m;
       flex-flow: column nowrap;
 
       background-size: 280px;
       background-position: center;
-      background-position-y: 80px;
+      background-position-y: 90px;
       background-repeat: no-repeat;
       background-color: $white;
 
       color: $font-color;
-      border-radius: 5px;
+      border-radius: 15px 15px;
       box-shadow: 0 7px 14px $card-shadow-color, 0 4px 7px $card-shadow-color;
 
-      h2 {
+      h3 {
         padding-top: 10px;
         text-align: center;
         letter-spacing: 0;
@@ -97,6 +105,36 @@
         .equipment-info {
           opacity: 1;
           transition: opacity 0.8s linear;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .equipment-section {
+    padding: $section-spc;
+
+    .equipment-header {
+      margin-bottom: $spc-l;
+    }
+
+    .equipment-cards {
+      width: 70%;
+      width: 70vw;
+      max-width: $content-max-width;
+      justify-content: space-between;
+
+      .equipment-card {
+        width: 21.25rem;
+        height: 23.75rem;
+
+        &:nth-of-type(1) {
+          margin: 0 $spc-s 0 0;
+        }
+
+        &:nth-of-type(2) {
+          margin: 0 0 0 $spc-s;
         }
       }
     }

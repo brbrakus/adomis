@@ -3,7 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding: $section-spc;
+  padding: $section-mob-spc;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -12,28 +12,28 @@
   color: $font-color-bright;
   background-color: $bg-color-dark;
 
-  h2 {
-    margin-bottom: $spc-l;
-    font-size: 1.5rem;
-    color: $font-color-bright;
-  }
-
   h3 {
     margin-bottom: $spc-m;
-    font-weight: 100;
     color: $font-color-bright;
+    font-size: 1.5rem;
   }
 
   .downloadable-icons {
     display: flex;
-    width: 40%;
-    width: 40vw;
+    width: 90%;
+    width: 90vw;
 
-    flex-flow: column nowrap;
-    justify-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    h4 {
+      padding: $spc-s;
+      font-weight: 300;
+      color: $font-color-bright;
+    }
 
     .downloadable-icon {
-      font-size: 6.25rem;
+      font-size: 5.5rem;
       color: $heading-color;
 
       &:hover {
@@ -43,10 +43,23 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 600px) {
   .downloadable-content {
+    padding: $section-spc;
+
+    h3 {
+      margin-bottom: $spc-l;
+    }
+
     .downloadable-icons {
-      flex-flow: row nowrap;
+      width: 40%;
+      width: 40vw;
+      max-width: $content-max-width;
+
+      .downloadable-icon {
+        margin: 0 $spc-m 0 $spc-m;
+        font-size: 6.25rem;
+      }
     }
   }
 }
