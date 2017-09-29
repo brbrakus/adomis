@@ -19,7 +19,7 @@
   }
 
   h4 {
-    margin-bottom: $spc-m;
+    margin-bottom: $spc-s;
     font-weight: 100;
     color: $font-color-bright;
   }
@@ -46,6 +46,10 @@
 @media screen and (min-width: 1025px) {
   .downloadable-content {
     padding: $section-spc;
+
+    h3 {
+      margin-bottom: $spc-l;
+    }
 
     .downloadable-icons {
       width: 40%;
