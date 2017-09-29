@@ -3,7 +3,7 @@
   width: 100%;
   width: 100vw;
 
-  padding: $spc-l 0 $spc-l 0;
+  padding: $spc-l 0 $spc-m 0;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -16,6 +16,11 @@
 
     margin-bottom: $spc-l;
     flex-flow: column wrap;
+
+    h1 {
+      padding-bottom: $spc-s;
+      color: $heading-color;
+    }
   }
 
   p {
