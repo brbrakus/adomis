@@ -49,6 +49,7 @@
 
       .about-us-card-header {
         display: flex;
+
         flex-flow: row nowrap;
         justify-content: flex-start;
         align-items: center;
@@ -93,7 +94,9 @@
       width: 70%;
       width: 70vw;
       max-width: $con-max-width;
+
       margin: $spc-tb-sm;
+
       flex-flow: row nowrap;
       justify-content: space-between;
 

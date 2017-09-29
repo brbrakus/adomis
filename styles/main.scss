@@ -15,8 +15,10 @@ $bg-color-bright: $grey;
 $text-shadow-color: rgba(0, 0, 0, 0.2);
 $card-shadow-color: rgba(0, 0, 0, 0.3);
 
+$icon-font-size: 1.625rem;
 $icon-shadow: 3px 3px 6px;
 $icon-dim: 57px;
+
 $con-max-width: 50.13rem;
 $con-mob-max-width: 34.38rem;
 
@@ -69,6 +71,10 @@ h3 {
   color: $heading-color;
 }
 
+h4 {
+  font-size: 1rem;
+}
+
 h5 {
   font-size: 0.75rem;
   color: $font-color-bright;
@@ -106,7 +112,6 @@ ul {
   top: -25px;
   visibility: hidden;
 }
-
 
 @import "header";
 @import "mainSlider";

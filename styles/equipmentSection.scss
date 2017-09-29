@@ -25,15 +25,20 @@
 
   .equipment-cards {
     display: flex;
+    width: 90%;
+    width: 90vw;
+
+    justify-content: center;
     flex-flow: row wrap;
-    justify-content: space-around;
-    text-align: left;
 
     .equipment-card {
       display: flex;
-      width: 90%;
-      width: 90vw;
+      width: 100%;
+      width: 100vw;
+      max-width: $con-mob-max-width;
+
       height: 400px;
+      height: 60vh;
 
       margin-bottom: $spc-s;
       padding: $spc-s;
@@ -41,12 +46,12 @@
 
       background-size: 280px;
       background-position: center;
-      background-position-y: 80px;
+      background-position-y: 90px;
       background-repeat: no-repeat;
       background-color: $white;
 
       color: $font-color;
-      border-radius: 5px;
+      border-radius: 15px 15px;
       box-shadow: 0 7px 14px $card-shadow-color, 0 4px 7px $card-shadow-color;
 
       h3 {
@@ -105,7 +110,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1025px) {
   .equipment-section {
     padding: $section-spc;
 
@@ -116,11 +121,20 @@
     .equipment-cards {
       width: 70%;
       width: 70vw;
+      max-width: $con-max-width;
+      justify-content: space-between;
 
       .equipment-card {
         width: 21.25rem;
         height: 23.75rem;
-        margin: $spc-s;
+
+        &:nth-of-type(1) {
+          margin: 0 $spc-s 0 0;
+        }
+
+        &:nth-of-type(2) {
+          margin: 0 0 0 $spc-s;
+        }
       }
     }
   }

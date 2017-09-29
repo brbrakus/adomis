@@ -2,8 +2,8 @@ footer {
   display: flex;
   width: 100%;
   width: 100vw;
-
   height: $spc-xl;
+
   flex-flow: column-reverse nowrap;
   justify-content: center;
   align-items: center;
@@ -20,16 +20,18 @@ footer {
     display: flex;
     width: 30%;
     width: 30vw;
+
     margin: 0;
 
     justify-content: space-around;
     flex-flow: row nowrap;
 
-    font-size: 1.625rem;
+    font-size: $icon-font-size;
 
     .social-icon {
       display: inline-flex;
       width: 30px;
+
       margin: 0;
       padding: 0 $spc-s 0 $spc-s;
 
