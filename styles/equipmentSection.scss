@@ -19,7 +19,6 @@
     flex-flow: column nowrap;
 
     h1 {
-      padding-bottom: $spc-s;
       color: $font-color-bright;
     }
   }
@@ -109,6 +108,10 @@
 @media screen and (min-width: 600px) {
   .equipment-section {
     padding: $section-spc;
+
+    .equipment-header {
+      margin-bottom: $spc-l;
+    }
 
     .equipment-cards{
       width: 75%;

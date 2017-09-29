@@ -15,7 +15,7 @@
     width: 90%;
     width: 90vw;
 
-    margin-bottom: $spc-l;
+    margin-bottom: $spc-m;
     flex-flow: column wrap;
 
     h1 {
@@ -85,7 +85,7 @@
 
 @media screen and (min-width: 1025px) {
   .about-us {
-    padding: $spc-l 0 $spc-m 0;
+    padding: $section-spc;
 
     .about-us-header {
       width: 100%;
@@ -103,7 +103,7 @@
         width: 34%;
         width: 24vw;
         max-width: 21.5rem;
-        margin: $spc-m 0 $spc-m 0;
+        margin: 0 0 $spc-m 0;
       }
     }
   }
