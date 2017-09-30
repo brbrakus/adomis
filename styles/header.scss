@@ -37,6 +37,7 @@ header {
       h1 {
         font-size: 1.375rem;
         font-weight: 600;
+        text-align: left;
 
         color: $font-color;
       }
@@ -45,11 +46,11 @@ header {
 
   .hamburger-menu {
     display: flex;
-    height: 23px;
+    height: 21px;
     width: 29px;
 
-    position: absolute;
-    right: $spc-s;
+    position: relative;
+    right: 5%;
 
     flex-flow: column nowrap;
     align-items: center;
@@ -76,11 +77,11 @@ header {
 
       &:nth-child(2),
       &:nth-child(3) {
-        top: 9px;
+        top: 8px;
       }
 
       &:nth-child(4) {
-        top: 18px;
+        top: 16px;
       }
     }
 
@@ -182,6 +183,18 @@ header {
 
     .hamburger-menu {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    .brand {
+      a {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }
