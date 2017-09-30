@@ -8,6 +8,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   z-index: 5;
 
   background-color: $white;
@@ -17,7 +18,7 @@ header {
   box-shadow: 3px 0px 6px $text-shadow-color;
 
   .brand {
-    margin-left: $spc-m;
+    margin-left: 5%;
 
     a {
       display: flex;
@@ -30,19 +31,14 @@ header {
       }
 
       img {
-        width: 45px;
+        display: none;
       }
 
       h1 {
-        margin-left: 6%;
-        margin-left: 2vw;
-
         font-size: 1.375rem;
-        font-weight: 500;
-        letter-spacing: 0.05em;
+        font-weight: 600;
 
         color: $font-color;
-        text-shadow: 0px 0px 1px $text-shadow-color;
       }
     }
   }
@@ -50,12 +46,13 @@ header {
   .hamburger-menu {
     display: flex;
     height: 23px;
-    width: 32px;
+    width: 29px;
+
+    position: absolute;
+    right: $spc-s;
 
     flex-flow: column nowrap;
-    justify-content: space-around;
-    position: absolute;
-    right: $spc-m;
+    align-items: center;
 
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -64,10 +61,11 @@ header {
       display: block;
       height: 4px;
       width: 100%;
+
       position: absolute;
       left: 0;
 
-      border-radius: 3px;
+      border-radius: 9px;
       background-color: $font-color;
 
       transition: 0.25s ease-in-out;
@@ -108,30 +106,31 @@ header {
 
   .navbar-items {
     display: none;
-    flex-flow: column nowrap;
-    height: 13.44rem;
     width: 100%;
     width: 100vw;
+    height: 13.44rem;
 
-    padding: $spc-s;
     position: absolute;
     top: 69px;
+    padding: $spc-s;
 
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
 
-    border-top: 1px solid $grey;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
     background: $white;
+    border-top: 1px solid $grey;
+
     font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px $text-shadow-color;
 
     .navbar-item {
       display: inline;
       margin-left: 6px;
       margin-left: 6vw;
-
-      font-weight: 500;
     }
 
     &.active {
@@ -142,21 +141,39 @@ header {
 
 @media screen and (min-width: 1025px) {
   header {
+    .brand {
+      margin-left: $spc-m;
+
+      a {
+        img {
+          display: block;
+          width: 45px;
+        }
+
+        h1 {
+          font-size: 1.375rem;
+          margin-left: 6%;
+          margin-left: 2vw;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+
     .navbar-items {
       display: flex;
       width: 40%;
       width: 40vw;
       height: auto;
 
-      margin-right: $spc-m;
-      padding: 0;
-
-      flex-flow: row nowrap;
       position: relative;
       top: auto;
 
-      font-size: 1rem;
+      margin-right: $spc-m;
+      padding: 0;
+      flex-flow: row nowrap;
+
       border: 0;
+      font-size: 1rem;
 
       .navbar-item {
         margin: 0;
