@@ -62,11 +62,11 @@
       }
 
       &:nth-of-type(1) {
-        background-image: url("assets/images/teleskop1_full.jpg");
+        background-image: url('assets/images/teleskop1_full.jpg');
       }
 
       &:nth-of-type(2) {
-        background-image: url("assets/images/teleskop2_full.jpg");
+        background-image: url('assets/images/teleskop2_full.jpg');
       }
 
       .equipment-image {
@@ -87,7 +87,7 @@
         transition: none;
 
         .equipment-info-prop-title {
-          font-weight: 600;
+          font-weight: $font-weight-semi-bold;
         }
 
         li {
