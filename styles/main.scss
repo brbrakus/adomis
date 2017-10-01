@@ -38,7 +38,7 @@ body {
 
   box-sizing: border-box;
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 html,
@@ -102,7 +102,7 @@ ul {
 }
 
 .content {
-  padding-top: 65px;
+  padding-top: 4.375rem;
 
   .overlay {
     display: none;
@@ -111,7 +111,7 @@ ul {
 
     position: absolute;
     background-color: $grey;
-    opacity: 0.6;
+    opacity: 0.7;
 
     &.active {
       display: block;
@@ -121,15 +121,29 @@ ul {
 
 .onsite-anchor {
   display: block;
+  top: -$spc-m;
   position: relative;
-  top: -25px;
   visibility: hidden;
 }
 
-@import "header";
-@import "mainSlider";
-@import "aboutUs";
-@import "equipmentSection";
-@import "downloadableContent";
-@import "info";
-@import "footer";
+@media screen and (min-width: 1025px) {
+  .content {
+    .overlay {
+      &.active {
+        display: none;
+      }
+    }
+  }
+
+  .onsite-anchor {
+    top: -&spc-s;
+  }
+}
+
+@import 'header';
+@import 'mainSlider';
+@import 'aboutUs';
+@import 'equipmentSection';
+@import 'downloadableContent';
+@import 'info';
+@import 'footer';
