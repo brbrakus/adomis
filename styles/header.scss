@@ -8,6 +8,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
   z-index: 5;
 
   background-color: $white;
@@ -17,7 +18,7 @@ header {
   box-shadow: 3px 0px 6px $text-shadow-color;
 
   .brand {
-    margin-left: $spc-m;
+    margin-left: 5%;
 
     a {
       display: flex;
@@ -30,32 +31,29 @@ header {
       }
 
       img {
-        width: 45px;
+        display: none;
       }
 
       h1 {
-        margin-left: 6%;
-        margin-left: 2vw;
-
         font-size: 1.375rem;
-        font-weight: 500;
-        letter-spacing: 0.05em;
+        font-weight: $font-weight-semi-bold;
+        text-align: left;
 
         color: $font-color;
-        text-shadow: 0px 0px 1px $text-shadow-color;
       }
     }
   }
 
   .hamburger-menu {
     display: flex;
-    height: 23px;
-    width: 32px;
+    height: 21px;
+    width: 29px;
+
+    position: relative;
+    right: 5%;
 
     flex-flow: column nowrap;
-    justify-content: space-around;
-    position: absolute;
-    right: $spc-m;
+    align-items: center;
 
     transition: 0.5s ease-in-out;
     cursor: pointer;
@@ -64,10 +62,11 @@ header {
       display: block;
       height: 4px;
       width: 100%;
+
       position: absolute;
       left: 0;
 
-      border-radius: 3px;
+      border-radius: 9px;
       background-color: $font-color;
 
       transition: 0.25s ease-in-out;
@@ -78,16 +77,18 @@ header {
 
       &:nth-child(2),
       &:nth-child(3) {
-        top: 9px;
+        top: 8px;
       }
 
       &:nth-child(4) {
-        top: 18px;
+        top: 16px;
       }
     }
 
     &.active {
       span {
+        background-color: $heading-color;
+
         &:nth-child(1),
         &:nth-child(4) {
           width: 0%;
@@ -107,59 +108,101 @@ header {
   }
 
   .navbar-items {
-    display: none;
-    flex-flow: column nowrap;
-    height: 13.44rem;
+    display: flex;
     width: 100%;
     width: 100vw;
+    height: 0rem;
 
-    padding: $spc-s;
+    visibility: hidden;
+    overflow: hidden;
+
     position: absolute;
     top: 69px;
+    padding: $spc-s;
 
+    flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
 
-    border-top: 1px solid $grey;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    background: $white;
     font-size: 1.25rem;
+    font-weight: $font-weight-medium;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px $text-shadow-color;
+
+    border-top: $border-grey;
+    background: $white;
+    transition: height 0.5s;
 
     .navbar-item {
       display: inline;
-      margin-left: 6px;
+      margin-left: 6%;
       margin-left: 6vw;
-
-      font-weight: 500;
     }
 
     &.active {
-      display: flex;
+      height: 20rem;
+      visibility: visible;
+      transition: height 0.5s;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  header {
+    .brand {
+      a {
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }
 
 @media screen and (min-width: 1025px) {
   header {
+    .brand {
+      margin-left: $spc-m;
+
+      a {
+        img {
+          display: block;
+          width: 45px;
+        }
+
+        h1 {
+          font-size: 1.375rem;
+          margin-left: 6%;
+          margin-left: 2vw;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+
     .navbar-items {
       display: flex;
       width: 40%;
       width: 40vw;
       height: auto;
 
+      visibility: visible;
+      position: relative;
+
+      top: auto;
       margin-right: $spc-m;
       padding: 0;
-
       flex-flow: row nowrap;
-      position: relative;
-      top: auto;
 
-      font-size: 1rem;
       border: 0;
+      font-size: 1rem;
 
       .navbar-item {
         margin: 0;
+      }
+
+      &.active {
+        height: 4.375rem;
       }
     }
 

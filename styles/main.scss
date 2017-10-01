@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
 
 $white: #fff;
 $grey: #d3d3d3;
@@ -30,6 +30,14 @@ $spc-xl: 9.375rem;
 $section-spc: $spc-l 0 $spc-xl 0;
 $section-mob-spc: $spc-m 0 $spc-l 0;
 
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$border-grey: 1px solid $grey;
+
 *,
 html,
 body {
@@ -38,7 +46,7 @@ body {
 
   box-sizing: border-box;
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 html,
@@ -53,29 +61,33 @@ body {
 h1 {
   text-align: center;
   font-size: 2.375rem;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
   text-shadow: 0px 1px 2px $text-shadow-color;
 }
 
 h2 {
   text-align: center;
   font-size: 1.375rem;
-  font-weight: 400;
+  font-weight: $font-weight-regular;
 }
 
 h3 {
   font-size: 1.125rem;
   text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 0.2em;
   color: $heading-color;
 }
 
 h4 {
   font-size: 1rem;
+  font-weight: $font-weight-semi-bold;
+  letter-spacing: 0.02em;
 }
 
 h5 {
   font-size: 0.75rem;
+  font-weight: $font-weight-light;
   color: $font-color-bright;
 }
 
@@ -102,20 +114,48 @@ ul {
 }
 
 .content {
-  padding-top: 65px;
+  padding-top: 4.375rem;
+
+  .overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    background-color: $grey;
+    opacity: 0.7;
+
+    &.active {
+      display: block;
+    }
+  }
 }
 
 .onsite-anchor {
   display: block;
+  top: -$spc-m;
   position: relative;
-  top: -25px;
   visibility: hidden;
 }
 
-@import "header";
-@import "mainSlider";
-@import "aboutUs";
-@import "equipmentSection";
-@import "downloadableContent";
-@import "info";
-@import "footer";
+@media screen and (min-width: 1025px) {
+  .content {
+    .overlay {
+      &.active {
+        display: none;
+      }
+    }
+  }
+
+  .onsite-anchor {
+    top: -&spc-s;
+  }
+}
+
+@import 'header';
+@import 'mainSlider';
+@import 'aboutUs';
+@import 'equipmentSection';
+@import 'downloadableContent';
+@import 'info';
+@import 'footer';
