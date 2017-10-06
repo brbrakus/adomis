@@ -1,8 +1,8 @@
-import images from '../constants/images';
+import images from '../constants/images'
 
-export default () => {
-  const sliderImagePlaceholder = document.querySelector('.slider-image-placeholder');
-  const image = new Image();
+function loadSliderImage() {
+  const sliderImagePlaceholder = document.querySelector('.slider-image-placeholder')
+  const image = new Image()
 
   if (window.matchMedia('(min-width: 2560px)').matches) {
     image.src = images.sliderImageLarge
@@ -15,6 +15,28 @@ export default () => {
   image.onload = () => {
     const placeholderImage = document.querySelector('.slider-image-placeholder .placeholder-image')
     placeholderImage.classList.add('loaded')
-    sliderImagePlaceholder.appendChild(image);
-  };
-};
+    sliderImagePlaceholder.appendChild(image)
+  }
+}
+
+function loadMembersImage() {
+  const membersImagePlaceholder = document.querySelector('.members-image-placeholder')
+  const image = new Image()
+
+  if (window.matchMedia('(min-width: 1365px)').matches) {
+    image.src = images.membersImageLarge
+  } else {
+    image.src = images.membersImageSmall
+  }
+
+  image.onload = () => {
+    const placeholderImage = document.querySelector('.members-image-placeholder .placeholder-image')
+    placeholderImage.classList.add('loaded')
+    membersImagePlaceholder.appendChild(image)
+  }
+}
+
+export default function loadImages() {
+  loadSliderImage()
+  loadMembersImage()
+}

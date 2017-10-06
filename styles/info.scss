@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  padding: $section-mob-spc;
+  padding: $spc-m 0 0 0;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -89,11 +89,25 @@
       }
     }
   }
+
+  .members-image-placeholder {
+    width: 100%;
+    padding-top: $spc-l;
+
+    .loaded {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: 1025px) {
   .info {
-    padding: $section-spc;
+    padding: $spc-l 0 0 0;
 
     h1 {
       margin-bottom: $spc-l;
@@ -122,6 +136,10 @@
           margin: 0 0 $spc-s 0;
         }
       }
+    }
+
+    .members-image-placeholder {
+      padding-top: $spc-xl;
     }
   }
 }
