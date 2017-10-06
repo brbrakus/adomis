@@ -8,8 +8,10 @@
     "build:js": "js/**"
   },
   "scripts": {
-    "sass": "node-sass styles/main.scss public/style.css --output-style compressed",
-    "autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss --use cssnano -o public/style.css",
+    "sass":
+      "node-sass styles/main.scss public/style.css --output-style compressed",
+    "autoprefixer":
+      "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss --use cssnano -o public/style.css",
     "lint": "eslint -c .eslintrc.json -f table --color js/**",
     "lint-fix": "eslint -c .eslintrc.json -f table --color js/** --fix",
     "precommit": "npm run lint-fix",
@@ -46,5 +48,8 @@
     "rollup-plugin-buble": "^0.15.0",
     "rollup-plugin-uglify": "^2.0.1",
     "surge": "^0.19.0"
+  },
+  "prettier": {
+    "semi": false
   }
 }
