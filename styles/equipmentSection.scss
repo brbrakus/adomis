@@ -50,8 +50,10 @@
       background-color: $white;
 
       color: $font-color;
-      border-radius: 15px 15px;
+      border-radius: 9px;
       box-shadow: 0 7px 14px $card-shadow-color, 0 4px 7px $card-shadow-color;
+
+      cursor: pointer;
 
       h3 {
         padding-top: 10px;
@@ -59,17 +61,11 @@
         letter-spacing: 0;
       }
 
-      .plus-icon {
-        position: relative;
-        font-size: 5rem;
-        color: $heading-color;
-        text-align: right;
-      }
-
       i {
+        visibility: visible;
+        text-align: right;
         font-size: 1.375rem;
         color: $heading-color;
-        text-align: right;
       }
 
       &:nth-of-type(1) {
@@ -108,7 +104,7 @@
         }
       }
 
-      &:hover {
+      &.active {
         background-image: none;
         opacity: 1;
         box-shadow: 0 15px 38px $card-shadow-color,
@@ -118,6 +114,10 @@
         .equipment-info {
           opacity: 1;
           transition: opacity 0.8s linear;
+        }
+
+        .info-icon {
+          visibility: hidden;
         }
       }
     }
