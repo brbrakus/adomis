@@ -1,3 +1,4 @@
+@import './breakpoints.scss';
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
 
 $white: #fff;
@@ -138,7 +139,7 @@ ul {
   visibility: hidden;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: $desktop) {
   .content {
     .overlay {
       &.active {

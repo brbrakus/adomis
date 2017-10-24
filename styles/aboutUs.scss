@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 .about-us {
   display: flex;
   width: 100%;
@@ -80,7 +82,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: $desktop) {
   .about-us {
     padding: $section-spc;
 

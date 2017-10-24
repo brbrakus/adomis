@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 .equipment-section {
   display: flex;
   width: 100%;
@@ -111,7 +113,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: $desktop) {
   .equipment-section {
     padding: $section-spc;
 

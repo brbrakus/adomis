@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 header {
   display: flex;
   width: 100%;
@@ -160,7 +162,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: $desktop) {
   header {
     .brand {
       margin-left: $spc-m;
