@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 .info {
   display: flex;
   width: 100%;
@@ -105,7 +107,7 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: $desktop) {
   .info {
     padding: $spc-l 0 0 0;
 
