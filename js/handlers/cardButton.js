@@ -1,9 +1,9 @@
 export default () => {
-  const card = document.querySelector('.equipment-card')
+  const cards = document.querySelectorAll('.equipment-card')
 
   function toggleCardInfo() {
-    card.classList.toggle('active')
+    this.classList.toggle('active')
   }
 
-  card.addEventListener('click', toggleCardInfo)
+  cards.forEach(card => card.addEventListener('click', toggleCardInfo))
 }
