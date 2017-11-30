@@ -8,10 +8,8 @@
     "build:js": "js/**"
   },
   "scripts": {
-    "sass":
-      "node-sass styles/main.scss public/style.css --output-style compressed",
-    "autoprefixer":
-      "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss --use cssnano -o public/style.css",
+    "sass": "node-sass styles/main.scss public/style.css --output-style compressed",
+    "autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss --use cssnano -o public/style.css",
     "lint": "eslint -c .eslintrc.json -f table --color js/**",
     "lint-fix": "eslint -c .eslintrc.json -f table --color js/** --fix",
     "precommit": "npm run lint-fix",
@@ -32,7 +30,9 @@
     "url": "https://github.com/brbrakus/adomis/issues"
   },
   "homepage": "https://github.com/brbrakus/adomis#readme",
-  "dependencies": {},
+  "dependencies": {
+    "critical": "^1.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "cssnano": "^3.10.0",
