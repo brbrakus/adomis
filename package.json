@@ -16,10 +16,10 @@
     "precommit": "npm run lint-fix",
     "build:css": "npm run sass && npm run autoprefixer",
     "build:js": "npm run lint && rollup -c",
-    "build": "npm run build:js && npm run build:css",
+    "build:critical": "node critical.js",
+    "build": "npm run build:js && npm run build:css && npm run build:critical",
     "watch": "npm run build && rerun-script",
-    "critical": "node critical.js",
-    "deploy": "surge ./ https://adomis.surge.sh"
+    "deploy": "npm run build && surge ./ https://adomis.surge.sh"
   },
   "repository": {
     "type": "git",
