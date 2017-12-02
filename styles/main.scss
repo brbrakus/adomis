@@ -1,5 +1,4 @@
 @import './breakpoints.scss';
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
 
 $white: #fff;
 $grey: #d3d3d3;
@@ -149,7 +148,7 @@ ul {
   }
 
   .onsite-anchor {
-    top: -&spc-s;
+    top: -$spc-s;
   }
 }
 
