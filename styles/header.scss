@@ -115,12 +115,10 @@ header {
     width: 100vw;
     height: 0rem;
 
-    visibility: hidden;
     overflow: hidden;
 
     position: absolute;
     top: 69px;
-    padding: $spc-s;
 
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -134,7 +132,7 @@ header {
 
     border-top: $border-grey;
     background: $white;
-    transition: height 0.5s;
+    transition: height 0.25s ease-out;
 
     .navbar-item {
       display: inline;
@@ -144,8 +142,9 @@ header {
 
     &.active {
       height: 20rem;
-      visibility: visible;
-      transition: height 0.5s;
+      padding: $spc-s;
+
+      transition: height 0.25s ease-out;
     }
   }
 }
