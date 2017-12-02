@@ -3,6 +3,7 @@
 
   .slider-image-placeholder {
     min-height: 70vh;
+    background: #0f0f0f;
 
     @media screen and (max-width: $desktop) {
       min-height: 20vh;
