@@ -20,5 +20,5 @@ critical
     minify: true,
     ignore: ['@font-face', '@import'],
   })
-  .then(output => console.log(output))
+  .then(() => console.log('Successfully extracted critical CSS.'))
   .catch(err => console.log(err))
