@@ -9,15 +9,19 @@
   },
   "scripts": {
     "sass": "node-sass styles/main.scss public/style.css --output-style compressed",
-    "autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss --use cssnano -o public/style.css",
+    "autoprefixer":
+      "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss -c postcss.config.js -o public/style.css",
     "lint": "eslint -c .eslintrc.json -f table --color js/**",
     "lint-fix": "eslint -c .eslintrc.json -f table --color js/** --fix",
     "precommit": "npm run lint-fix",
-    "build:css": "npm run sass && npm run autoprefixer",
-    "build:js": "npm run lint && rollup -c",
-    "build": "npm run build:js && npm run build:css",
+    "build:icons":
+      "postcss --use autoprefixer -b 'last 2 versions' styles/icons.css | postcss -c postcss.config.js -o public/icons.css",
+    "build:css": "npm run sass && npm run autoprefixer && npm run build:icons",
+    "build:js": "npm run lint && rollup -c && rollup -c lazy.config.js",
+    "build:critical": "node critical.js",
+    "build": "npm run build:js && npm run build:css && npm run build:critical",
     "watch": "npm run build && rerun-script",
-    "deploy": "surge ./ https://adomis.surge.sh"
+    "deploy": "npm run build && surge ./ https://adomis.surge.sh"
   },
   "repository": {
     "type": "git",
@@ -30,10 +34,9 @@
     "url": "https://github.com/brbrakus/adomis/issues"
   },
   "homepage": "https://github.com/brbrakus/adomis#readme",
-  "dependencies": {
-    "critical": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "critical": "^1.1.0",
     "autoprefixer": "^7.1.1",
     "cssnano": "^3.10.0",
     "eslint": "^3.19.0",

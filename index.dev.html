@@ -4,30 +4,10 @@
 <head>
   <title>Astronomsko Društvo Omiš</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico">
-
-  <style type="text/css">
-    *,
-    body,
-    html {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: Raleway, sans-serif;
-    }
-
-    body,
-    html {
-      width: 100%;
-      height: 100%;
-      font-size: 16px;
-      overflow-x: hidden;
-    }
-  </style>
-  <link rel="preload" href="public/style.css" as="style" onload="this.rel='stylesheet'">
-  <!-- <noscript><link rel="stylesheet" href="public/style.css"></noscript> -->
-  <script>!function (e) { "use strict"; var t = function (t, n, r) { function o(e) { if (i.body) return e(); setTimeout(function () { o(e) }) } function a() { d.addEventListener && d.removeEventListener("load", a), d.media = r || "all" } var l, i = e.document, d = i.createElement("link"); if (n) l = n; else { var s = (i.body || i.getElementsByTagName("head")[0]).childNodes; l = s[s.length - 1] } var u = i.styleSheets; d.rel = "stylesheet", d.href = t, d.media = "only x", o(function () { l.parentNode.insertBefore(d, n ? l : l.nextSibling) }); var f = function (e) { for (var t = d.href, n = u.length; n--;)if (u[n].href === t) return e(); setTimeout(function () { f(e) }) }; return d.addEventListener && d.addEventListener("load", a), d.onloadcssdefined = f, f(a), d }; "undefined" != typeof exports ? exports.loadCSS = t : e.loadCSS = t }("undefined" != typeof global ? global : this), function (e) { if (e.loadCSS) { var t = loadCSS.relpreload = {}; if (t.support = function () { try { return e.document.createElement("link").relList.supports("preload") } catch (e) { return !1 } }, t.poly = function () { for (var t = e.document.getElementsByTagName("link"), n = 0; n < t.length; n++) { var r = t[n]; "preload" === r.rel && "style" === r.getAttribute("as") && (e.loadCSS(r.href, r, r.getAttribute("media")), r.rel = null) } }, !t.support()) { t.poly(); var n = e.setInterval(t.poly, 300); e.addEventListener && e.addEventListener("load", function () { t.poly(), e.clearInterval(n) }), e.attachEvent && e.attachEvent("onload", function () { e.clearInterval(n) }) } } }(this);</script>
+  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/icons.css">
 </head>
 
 <body>
@@ -57,7 +37,7 @@
         <a href="#equipment-anchor">Oprema</a>
       </li>
       <li class="navbar-item">
-        <a href="#content-anchor">Info</a>
+        <a href="#content-anchor">Kontakt</a>
       </li>
       <li class="navbar-item">
         <a href="https://www.facebook.com/adomis2011/">Facebook</a>
@@ -69,17 +49,17 @@
     <div class="overlay"></div>
     <div class="main-slider">
 
-      <div class="main-slider-arrow arrow-left">
+      <!-- <div class="main-slider-arrow arrow-left">
         <i class="icon-caret-left"></i>
       </div>
       <div class="main-slider-arrow arrow-right">
         <i class="icon-caret-right"></i>
-      </div>
+      </div> -->
 
       <div class="main-slider-item">
         <div class="slider-image-placeholder">
           <picture>
-            <source srcset="public/assets/images/banner-compressed.svg" media="(min-width: 1024px)">
+            <source srcset="public/assets/images/banner-compressed.svg" media="(min-width: 1024px)"></source>
             <img src="public/assets/images/banner-compressed-small.svg" alt="banner" class="placeholder-image">
           </picture>
         </div>
@@ -185,6 +165,7 @@
             <li>
               <span class="equipment-info-prop-title">Montaža:</span> Kompjuterizirana/GoTo</li>
           </ul>
+          <i class="fa fa-plus info-icon"></i>
         </div>
 
         <div class="equipment-card">
@@ -203,6 +184,7 @@
             <li>
               <span class="equipment-info-prop-title">Montaža:</span> Dobson</li>
           </ul>
+          <i class="fa fa-plus info-icon"></i>
         </div>
       </div>
 
@@ -239,6 +221,7 @@
       </div>
     </div>
 
+    <a id="content-anchor" class="onsite-anchor"></a>
     <div class="info">
 
       <h1>
@@ -291,7 +274,7 @@
 
       <div class="members-image-placeholder">
         <picture>
-          <source srcset="public/assets/images/members-compressed.svg" media="(min-width: 1024px)">
+          <source srcset="public/assets/images/members-compressed.svg" media="(min-width: 1024px)"></source>
           <img src="public/assets/images/members-mobile-compressed.svg" alt="members" class="placeholder-image">
         </picture>
       </div>
@@ -324,7 +307,8 @@
     </ul>
   </footer>
 
-  <script type="text/javascript" src="public/bundle.js"></script>
+  <script async type="text/javascript" src="public/lazy.js"></script>
+  <script async type="text/javascript" src="public/bundle.js"></script>
 
 </body>
 

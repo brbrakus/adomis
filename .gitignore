@@ -2,4 +2,6 @@ node_modules
 npm-debug.log
 
 public/style.css
+public/icons.css
 public/bundle.js
+index.html
