@@ -30,7 +30,9 @@
     "url": "https://github.com/brbrakus/adomis/issues"
   },
   "homepage": "https://github.com/brbrakus/adomis#readme",
-  "dependencies": {},
+  "dependencies": {
+    "critical": "^1.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "cssnano": "^3.10.0",

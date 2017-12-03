@@ -1,6 +1,14 @@
 .main-slider {
   position: relative;
 
+  .slider-image-placeholder {
+    min-height: 70vh;
+
+    @media screen and (max-width: $desktop) {
+      min-height: 20vh;
+    }
+  }
+
   .main-slider-arrow {
     display: flex;
     visibility: hidden;
