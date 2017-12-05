@@ -9,13 +9,11 @@
   },
   "scripts": {
     "sass": "node-sass styles/main.scss public/style.css --output-style compressed",
-    "autoprefixer":
-      "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss -c postcss.config.js -o public/style.css",
+    "autoprefixer": "postcss --use autoprefixer -b 'last 2 versions' public/style.css | postcss -c postcss.config.js -o public/style.css",
     "lint": "eslint -c .eslintrc.json -f table --color js/**",
     "lint-fix": "eslint -c .eslintrc.json -f table --color js/** --fix",
     "precommit": "npm run lint-fix",
-    "build:icons":
-      "postcss --use autoprefixer -b 'last 2 versions' styles/icons.css | postcss -c postcss.config.js -o public/icons.css",
+    "build:icons": "postcss --use autoprefixer -b 'last 2 versions' styles/icons.css | postcss -c postcss.config.js -o public/icons.css",
     "build:css": "npm run sass && npm run autoprefixer && npm run build:icons",
     "build:js": "npm run lint && rollup -c && rollup -c lazy.config.js",
     "build:critical": "node critical.js",

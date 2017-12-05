@@ -4,7 +4,7 @@
   display: flex;
   width: 100%;
   width: 100vw;
-  padding: $spc-m 0 0 0;
+  padding-top: $spc-m;
 
   flex-flow: column nowrap;
   align-items: center;
@@ -26,7 +26,7 @@
 
     iframe {
       width: 90%;
-      height: 300px;
+      height: 400px;
 
       margin-bottom: $spc-m;
       border: 0;
@@ -107,9 +107,20 @@
   }
 }
 
+@media screen and (min-width: 740px) {
+  .info {
+    .info-body {
+      iframe {
+        width: 70%;
+        width: 70vw;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $desktop) {
   .info {
-    padding: $spc-l 0 0 0;
+    padding-top: $spc-l;
 
     h1 {
       margin-bottom: $spc-l;
