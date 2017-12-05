@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
+
 @import './breakpoints.scss';
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
 
 $white: #fff;
 $grey: #d3d3d3;
@@ -16,9 +17,10 @@ $bg-color-bright: $grey;
 $text-shadow-color: rgba(0, 0, 0, 0.2);
 $card-shadow-color: rgba(0, 0, 0, 0.3);
 
+$icon-size: 57px;
 $icon-font-size: 1.625rem;
 $icon-shadow: 3px 3px 6px $text-shadow-color;
-$icon-size: 57px;
+$text-shadow: 0px 1px 2px $text-shadow-color;
 
 $content-max-width: 50.13rem;
 $content-mob-max-width: 34.38rem;
@@ -31,11 +33,9 @@ $spc-xl: 9.375rem;
 $section-spc: $spc-l 0 $spc-xl 0;
 $section-mob-spc: $spc-m 0 $spc-l 0;
 
-$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
-$font-weight-bold: 700;
 
 $border-grey: 1px solid $grey;
 
@@ -47,7 +47,7 @@ body {
 
   box-sizing: border-box;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
 }
 
 html,
@@ -63,7 +63,7 @@ h1 {
   text-align: center;
   font-size: 2.375rem;
   font-weight: $font-weight-regular;
-  text-shadow: 0px 1px 2px $text-shadow-color;
+  text-shadow: $text-shadow $text-shadow-color;
 }
 
 h2 {
@@ -88,7 +88,6 @@ h4 {
 
 h5 {
   font-size: 0.75rem;
-  font-weight: $font-weight-light;
   color: $font-color-bright;
 }
 
@@ -149,7 +148,7 @@ ul {
   }
 
   .onsite-anchor {
-    top: -&spc-s;
+    top: -$spc-s;
   }
 }
 
@@ -160,4 +159,3 @@ ul {
 @import 'downloadableContent';
 @import 'info';
 @import 'footer';
-@import 'icons';

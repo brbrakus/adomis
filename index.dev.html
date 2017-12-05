@@ -6,9 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" as="font" type="font/woff2"
-  crossorigin>
   <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/icons.css">
 </head>
 
 <body>
@@ -38,7 +37,7 @@
         <a href="#equipment-anchor">Oprema</a>
       </li>
       <li class="navbar-item">
-        <a href="#content-anchor">Info</a>
+        <a href="#content-anchor">Kontakt</a>
       </li>
       <li class="navbar-item">
         <a href="https://www.facebook.com/adomis2011/">Facebook</a>
@@ -50,12 +49,12 @@
     <div class="overlay"></div>
     <div class="main-slider">
 
-      <div class="main-slider-arrow arrow-left">
+      <!-- <div class="main-slider-arrow arrow-left">
         <i class="icon-caret-left"></i>
       </div>
       <div class="main-slider-arrow arrow-right">
         <i class="icon-caret-right"></i>
-      </div>
+      </div> -->
 
       <div class="main-slider-item">
         <div class="slider-image-placeholder">
@@ -162,6 +161,7 @@
             <li>
               <span class="equipment-info-prop-title">Montaža:</span> Kompjuterizirana/GoTo</li>
           </ul>
+          <i class="icon-plus info-icon"></i>
         </div>
 
         <div class="equipment-card">
@@ -180,6 +180,7 @@
             <li>
               <span class="equipment-info-prop-title">Montaža:</span> Dobson</li>
           </ul>
+          <i class="icon-plus info-icon"></i>
         </div>
       </div>
 
@@ -216,6 +217,7 @@
       </div>
     </div>
 
+    <a id="content-anchor" class="onsite-anchor"></a>
     <div class="info">
 
       <h1>
@@ -301,7 +303,8 @@
     </ul>
   </footer>
 
-  <script type="text/javascript" src="public/bundle.js"></script>
+  <script async type="text/javascript" src="public/lazy.js"></script>
+  <script async type="text/javascript" src="public/bundle.js"></script>
 
 </body>
 
