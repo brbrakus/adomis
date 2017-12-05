@@ -161,10 +161,10 @@ header {
   }
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: 600px) {
   header {
     .brand {
-      margin-left: $spc-m;
+      margin-left: $spc-s;
 
       a {
         img {
@@ -179,6 +179,14 @@ header {
           letter-spacing: 0.1em;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  header {
+    .brand {
+      margin-left: $spc-m;
     }
 
     .navbar-items {
