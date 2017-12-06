@@ -14,6 +14,7 @@
 
   .about-us-header {
     display: flex;
+
     width: 90%;
     width: 90vw;
 
@@ -28,55 +29,58 @@
 
   p {
     padding-top: $spc-s;
+    line-height: 1.3em;
   }
 
   .about-us-cards {
     display: flex;
-    margin: 0 $spc-m 0 $spc-m;
+
+    width: 90%;
+    width: 90vw;
+
+    margin: 0 $spc-m;
 
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 
     .about-us-card {
-      width: 90px;
-      width: 90vw;
-      max-width: $content-mob-max-width;
+      display: flex;
 
-      margin: $spc-s 0 $spc-s 0;
+      margin-bottom: $spc-m;
 
-      flex-flow: column wrap;
-      justify-content: space-around;
-      text-align: left;
+      flex-flow: row nowrap;
+      justify-content: space-between;
 
-      .about-us-card-header {
+      .about-us-icon,
+      .about-us-icon-telescope {
         display: flex;
 
-        flex-flow: row nowrap;
-        justify-content: flex-start;
+        min-width: $icon-size;
+        height: $icon-size;
+
+        justify-content: center;
         align-items: center;
+        text-align: center;
 
-        .about-us-icon,
-        .about-us-icon-telescope {
-          display: inline-flex;
-          width: $icon-size;
-          height: $icon-size;
-
-          margin-right: $spc-s;
-
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-
-          font-size: 1.625rem;
-          color: $link-hovered-color;
-          border-radius: 100%;
-          box-shadow: $icon-shadow;
-        }
+        font-size: 1.625rem;
+        color: $link-hovered-color;
+        border-radius: 100%;
+        box-shadow: $icon-shadow;
 
         .about-us-icon-telescope {
           font-size: 2.125rem;
         }
+      }
+
+      .about-us-content {
+        max-width: $content-mob-max-width;
+
+        margin-left: $spc-s;
+
+        flex-flow: column wrap;
+        justify-content: space-around;
+        text-align: left;
       }
     }
   }
@@ -84,27 +88,25 @@
 
 @media screen and (min-width: $desktop) {
   .about-us {
+    width: 100%;
+    width: 100vw;
+
     padding: $section-spc;
 
-    .about-us-header {
-      width: 100%;
-      width: 100vw;
-      margin-bottom: $spc-l;
-    }
-
     .about-us-cards {
-      width: 70%;
-      width: 70vw;
       max-width: $content-max-width;
 
-      margin: $spc-s 0 $spc-s 0;
+      margin: $spc-s 0;
 
       flex-flow: row nowrap;
       justify-content: space-between;
+      align-items: flex-start;
 
       .about-us-card {
-        width: 21.5rem;
-        margin: 0 0 $spc-m 0;
+        .about-us-content{
+          width: 18rem;
+          margin-top: $spc-s;
+        }
       }
     }
   }

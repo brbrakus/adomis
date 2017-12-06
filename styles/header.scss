@@ -2,6 +2,7 @@
 
 header {
   display: flex;
+
   width: 100%;
   width: 100vw;
   height: 4.375rem;
@@ -16,6 +17,7 @@ header {
   background-color: $white;
 
   font-weight: bold;
+
   color: $font-color;
   box-shadow: 3px 0px 6px $text-shadow-color;
 
@@ -24,6 +26,7 @@ header {
 
     a {
       display: flex;
+
       align-items: center;
       color: $font-color;
 
@@ -48,6 +51,7 @@ header {
 
   .hamburger-menu {
     display: flex;
+
     height: 21px;
     width: 29px;
 
@@ -62,6 +66,7 @@ header {
 
     span {
       display: block;
+
       height: 4px;
       width: 100%;
 
@@ -111,16 +116,15 @@ header {
 
   .navbar-items {
     display: flex;
+
     width: 100%;
     width: 100vw;
     height: 0rem;
 
-    visibility: hidden;
     overflow: hidden;
 
     position: absolute;
     top: 69px;
-    padding: $spc-s;
 
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -134,7 +138,7 @@ header {
 
     border-top: $border-grey;
     background: $white;
-    transition: height 0.5s;
+    transition: height 0.25s ease-out;
 
     .navbar-item {
       display: inline;
@@ -144,8 +148,7 @@ header {
 
     &.active {
       height: 20rem;
-      visibility: visible;
-      transition: height 0.5s;
+      transition: height 0.25s ease-out;
     }
   }
 }
@@ -162,10 +165,10 @@ header {
   }
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: $medium-screen) {
   header {
     .brand {
-      margin-left: $spc-m;
+      margin-left: $spc-s;
 
       a {
         img {
@@ -174,26 +177,36 @@ header {
         }
 
         h1 {
-          font-size: 1.375rem;
           margin-left: 6%;
           margin-left: 2vw;
+
+          font-size: 1.375rem;
           letter-spacing: 0.1em;
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  header {
+    .brand {
+      margin-left: $spc-m;
+    }
 
     .navbar-items {
       display: flex;
+
       width: 40%;
       width: 40vw;
       height: auto;
 
-      visibility: visible;
       position: relative;
 
       top: auto;
       margin-right: $spc-m;
       padding: 0;
+
       flex-flow: row nowrap;
 
       border: 0;
