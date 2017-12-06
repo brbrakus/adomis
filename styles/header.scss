@@ -161,7 +161,7 @@ header {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $medium-screen) {
   header {
     .brand {
       margin-left: $spc-s;

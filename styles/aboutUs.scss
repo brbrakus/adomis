@@ -37,7 +37,7 @@
     width: 90%;
     width: 90vw;
 
-    margin: 0 $spc-m 0 $spc-m;
+    margin: 0 $spc-m;
 
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -92,7 +92,7 @@
     .about-us-cards {
       max-width: $content-max-width;
 
-      margin: $spc-s 0 $spc-s 0;
+      margin: $spc-s 0;
 
       flex-flow: row nowrap;
       justify-content: space-between;
