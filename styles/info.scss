@@ -2,8 +2,10 @@
 
 .info {
   display: flex;
+
   width: 100%;
   width: 100vw;
+
   padding-top: $spc-m;
 
   flex-flow: column nowrap;
@@ -17,6 +19,7 @@
 
   .info-body {
     display: flex;
+
     width: 100%;
     width: 100vw;
 
@@ -34,6 +37,7 @@
 
     .info-items {
       display: flex;
+
       width: 90%;
       width: 90vw;
       max-width: $content-mob-max-width;
@@ -45,6 +49,7 @@
 
       .info-item {
         display: inline-flex;
+
         width: 100%;
         width: 100vw;
         max-width: 18.75rem;
@@ -74,6 +79,7 @@
 
         .location-icons {
           display: inline-flex;
+
           width: $icon-size;
           height: $icon-size;
 
@@ -141,6 +147,7 @@
 
       .info-items {
         width: 17.5rem;
+
         margin: 0;
         padding-left: $spc-m;
       }
@@ -154,6 +161,7 @@
 
 .members-image {
   display: block;
+
   width: 100%;
   width: 100vw;
 }

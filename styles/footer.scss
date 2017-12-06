@@ -2,6 +2,7 @@
 
 footer {
   display: flex;
+
   width: 100%;
   width: 100vw;
   height: $spc-xl;
@@ -19,6 +20,7 @@ footer {
 
   .social-icons {
     display: flex;
+
     width: 30%;
     width: 30vw;
 
@@ -31,6 +33,7 @@ footer {
 
     .social-icon {
       display: inline-flex;
+
       width: 30px;
 
       margin: 0;
@@ -42,10 +45,12 @@ footer {
 
     a {
       display: flex;
+
       width: 100%;
       width: 100vw;
 
       justify-content: center;
+
       color: $font-color-bright;
 
       &:hover {
@@ -58,6 +63,7 @@ footer {
 @media screen and (min-width: $desktop) {
   footer {
     height: 3.438rem;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

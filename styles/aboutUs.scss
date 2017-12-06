@@ -14,6 +14,7 @@
 
   .about-us-header {
     display: flex;
+
     width: 90%;
     width: 90vw;
 
@@ -27,7 +28,7 @@
   }
 
   p {
-    padding-top: 1.3rem;
+    padding-top: $spc-s;
     line-height: 1.3em;
   }
 
@@ -45,6 +46,7 @@
 
     .about-us-card {
       display: flex;
+
       margin-bottom: $spc-m;
 
       flex-flow: row nowrap;
@@ -53,6 +55,7 @@
       .about-us-icon,
       .about-us-icon-telescope {
         display: flex;
+
         min-width: $icon-size;
         height: $icon-size;
 
@@ -72,6 +75,7 @@
 
       .about-us-content {
         max-width: $content-mob-max-width;
+
         margin-left: $spc-s;
 
         flex-flow: column wrap;

@@ -2,6 +2,7 @@
 
 header {
   display: flex;
+
   width: 100%;
   width: 100vw;
   height: 4.375rem;
@@ -16,6 +17,7 @@ header {
   background-color: $white;
 
   font-weight: bold;
+
   color: $font-color;
   box-shadow: 3px 0px 6px $text-shadow-color;
 
@@ -24,6 +26,7 @@ header {
 
     a {
       display: flex;
+
       align-items: center;
       color: $font-color;
 
@@ -48,6 +51,7 @@ header {
 
   .hamburger-menu {
     display: flex;
+
     height: 21px;
     width: 29px;
 
@@ -62,6 +66,7 @@ header {
 
     span {
       display: block;
+
       height: 4px;
       width: 100%;
 
@@ -111,6 +116,7 @@ header {
 
   .navbar-items {
     display: flex;
+
     width: 100%;
     width: 100vw;
     height: 0rem;
@@ -142,8 +148,6 @@ header {
 
     &.active {
       height: 20rem;
-      padding: $spc-s;
-
       transition: height 0.25s ease-out;
     }
   }
@@ -173,9 +177,10 @@ header {
         }
 
         h1 {
-          font-size: 1.375rem;
           margin-left: 6%;
           margin-left: 2vw;
+
+          font-size: 1.375rem;
           letter-spacing: 0.1em;
         }
       }
@@ -183,7 +188,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1320px) {
+@media screen and (min-width: $desktop) {
   header {
     .brand {
       margin-left: $spc-m;
@@ -191,16 +196,17 @@ header {
 
     .navbar-items {
       display: flex;
+
       width: 40%;
       width: 40vw;
       height: auto;
 
-      visibility: visible;
       position: relative;
 
       top: auto;
       margin-right: $spc-m;
       padding: 0;
+
       flex-flow: row nowrap;
 
       border: 0;
