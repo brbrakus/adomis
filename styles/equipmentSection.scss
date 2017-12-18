@@ -1,4 +1,7 @@
-@import './breakpoints.scss';
+@import 'breakpoints.scss';
+@import 'colors.scss';
+@import 'spacings.scss';
+@import 'widths.scss';
 
 .equipment-section {
   display: flex;
@@ -107,7 +110,7 @@
         transition: none;
 
         .equipment-info-prop-title {
-          font-weight: $font-weight-semi-bold;
+          font-weight: 600;
         }
 
         li {

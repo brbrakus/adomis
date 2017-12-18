@@ -9,7 +9,13 @@ export default () => {
     overlay.classList.toggle('active')
   }
 
+  function closeHamburger() {
+    navbarItems.classList.remove('active')
+    hamburgerMenu.classList.remove('active')
+    overlay.classList.remove('active')
+  }
+
   hamburgerMenu.addEventListener('click', toggleHamburger)
 
-  navbarItems.children.forEach(navbarItem => navbarItem.addEventListener('click', toggleHamburger))
+  navbarItems.children.forEach(navbarItem => navbarItem.addEventListener('click', closeHamburger))
 }

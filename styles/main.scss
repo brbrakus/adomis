@@ -1,43 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
 
-@import './breakpoints.scss';
-
-$white: #fff;
-$grey: #d3d3d3;
-
-$font-color: #021223;
-$font-color-bright: $white;
-$link-hovered-color: #ed403a;
-$card-hover-color: $white;
-$heading-color: #0760b7;
-$bg-color-accent: $heading-color;
-$bg-color-dark: $font-color;
-$bg-color-bright: $grey;
-
-$text-shadow-color: rgba(0, 0, 0, 0.2);
-$card-shadow-color: rgba(0, 0, 0, 0.3);
-
-$icon-size: 57px;
-$icon-font-size: 1.625rem; // 26px
-$icon-shadow: 3px 3px 6px $text-shadow-color;
-$text-shadow: 0px 1px 2px $text-shadow-color;
-
-$content-max-width: 50.13rem; // 802px
-$content-mob-max-width: 34.38rem; // 550px
-
-$spc-s: 1.25rem; // 20px
-$spc-m: 3.125rem; // 50px
-$spc-l: 6.25rem; // 100px
-$spc-xl: 9.375rem; // 150px
-
-$section-spc: $spc-l 0 $spc-xl 0;
-$section-mob-spc: $spc-m 0 $spc-l 0;
-
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-semi-bold: 600;
-
-$border-grey: 1px solid $grey;
+@import 'breakpoints.scss';
+@import 'colors.scss';
+@import 'shadows.scss';
+@import 'spacings.scss';
 
 *,
 html,
@@ -62,14 +28,14 @@ body {
 h1 {
   text-align: center;
   font-size: 2.375rem;
-  font-weight: $font-weight-regular;
+  font-weight: 400;
   text-shadow: $text-shadow $text-shadow-color;
 }
 
 h2 {
   text-align: center;
   font-size: 1.375rem;
-  font-weight: $font-weight-regular;
+  font-weight: 400;
 }
 
 h3 {
@@ -82,7 +48,7 @@ h3 {
 
 h4 {
   font-size: 1rem;
-  font-weight: $font-weight-semi-bold;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 

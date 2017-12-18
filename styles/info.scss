@@ -1,4 +1,8 @@
-@import './breakpoints.scss';
+@import 'breakpoints.scss';
+@import 'colors.scss';
+@import 'icons.scss';
+@import 'spacings.scss';
+@import 'widths.scss';
 
 .info {
   display: flex;
