@@ -1,4 +1,4 @@
-@import './breakpoints.scss';
+@import "./breakpoints.scss";
 
 header {
   display: flex;
@@ -122,6 +122,7 @@ header {
     height: 0rem;
 
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
 
     position: absolute;
     top: 69px;

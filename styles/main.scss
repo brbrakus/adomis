@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600");
 
-@import './breakpoints.scss';
+@import "./breakpoints.scss";
 
 $white: #fff;
 $grey: #d3d3d3;
@@ -56,7 +56,7 @@ body {
   height: 100%;
 
   font-size: 16px;
-  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1 {
@@ -152,10 +152,10 @@ ul {
   }
 }
 
-@import 'header';
-@import 'mainSlider';
-@import 'aboutUs';
-@import 'equipmentSection';
-@import 'downloadableContent';
-@import 'info';
-@import 'footer';
+@import "header";
+@import "mainSlider";
+@import "aboutUs";
+@import "equipmentSection";
+@import "downloadableContent";
+@import "info";
+@import "footer";
