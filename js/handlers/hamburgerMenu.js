@@ -9,7 +9,9 @@ export default () => {
     overlay.classList.toggle('active')
   }
 
-  hamburgerMenu.addEventListener('click', toggleHamburger)
+  hamburgerMenu.addEventListener('click', toggleHamburger, { passive: true })
 
-  navbarItems.children.forEach(navbarItem => navbarItem.addEventListener('click', toggleHamburger))
+  navbarItems.children.forEach(navbarItem =>
+    navbarItem.addEventListener('click', toggleHamburger, { passive: true })
+  )
 }

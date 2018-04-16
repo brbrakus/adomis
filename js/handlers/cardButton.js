@@ -5,5 +5,5 @@ export default () => {
     this.classList.toggle('active')
   }
 
-  cards.forEach(card => card.addEventListener('click', toggleCardInfo))
+  cards.forEach(card => card.addEventListener('click', toggleCardInfo, { passive: true }))
 }
