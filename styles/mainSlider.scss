@@ -61,5 +61,8 @@
     display: block;
     width: 100%;
     width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    object-position: center center;
   }
 }
